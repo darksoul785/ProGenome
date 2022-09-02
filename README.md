@@ -5,8 +5,8 @@
 well, we don't know yet...
 
 ### Contributors
---Everardo Guerrero Andrade
---Guillermo Rair Tavizón Sánchez
---David Alonso Trejo Natividad
+- Everardo Guerrero Andrade
+- Guillermo Rair Tavizón Sánchez
+- David Alonso Trejo Natividad
 ## Reason
 This will be for our Engineering degree 
