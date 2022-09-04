@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    # Ejemplo ola
     return "Hello, Flask!"
 
 @app.route("/hello/<name>")
