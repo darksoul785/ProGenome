@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head xmlns:xi="http://www.w3.org/2001/XInclude">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <!-- meta -->
+  <meta content="index,nofollow,noarchive" name="robots"/>
+  <meta content="entrez" name="ncbi_app"/>
+  <meta content="protein" name="ncbi_db"/>
+  <meta content="genpept" name="ncbi_report"/>
+  <meta content="html" name="ncbi_format"/>
+  <meta content="20" name="ncbi_pagesize"/>
+  <meta content="default" name="ncbi_sortorder"/>
+  <meta content="1" name="ncbi_pageno"/>
+  <meta content="1" name="ncbi_resultcount"/>
+  <meta content="retrieve" name="ncbi_op"/>
+  <meta content="genpept" name="ncbi_pdid"/>
+  <meta content="CE8A25AB3FFA50B1_2674SID" name="ncbi_sessionid"/>
+  <meta content="7717238" name="ncbi_uidlist"/>
+  <meta content="all" name="ncbi_filter"/>
+  <meta content="false" name="ncbi_stat"/>
+  <meta content="false" name="ncbi_hitstat"/>
+  <!-- title -->
+  <title>
+   keratin, partial [Homo sapiens] - Protein - NCBI
+  </title>
+  <!-- Common JS and CSS -->
+  <script type="text/javascript">
+   var ncbi_startTime = new Date();
+  </script>
+  <style>
+   .async-hide { opacity: 0 !important}
+  </style>
+  <script src="/core/assets/kis/dist/kis_ga_nuc_protein.js" type="text/javascript"/>
+  <script src="https://static.pubmed.gov/core/jig/1.15.3/js/jig.min.js" type="text/javascript"/>
+  <script src="/core/ajax_loader/2.1/js/loadingbar.js" type="text/javascript"/>
+  <script src="/core/ajax_loader/2.1/js/contentLoader.js" type="text/javascript"/>
+  <link href="/core/ajax_loader/2.1/css/loadingbar.css" rel="stylesheet" type="text/css"/>
+  <link href="//static.pubmed.gov/portal/portal3rc.fcgi/4208398/css/4207974/4206132.css" rel="stylesheet" type="text/css" xml:base="http://127.0.0.1/sites/static/header_footer/" xmlns="http://www.w3.org/1999/xhtml"/>
+  <link href="//www.ncbi.nlm.nih.gov/favicon.ico" rel="shortcut icon"/>
+  <meta content="CE8A25AB3FF632B1000000000A7208D5.m_35" name="ncbi_phid"/>
+  <script type="text/javascript">
+   <!--
+var ScriptPath = '/portal/';
+var objHierarchy = {"name":"EntrezSystem2","type":"Layout","realname":"EntrezSystem2",
+"children":[{"name":"EntrezSystem2.PEntrez","type":"Cluster","realname":"EntrezSystem2.PEntrez",
+"children":[{"name":"EntrezSystem2.PEntrez.DbConnector","type":"Portlet","realname":"EntrezSystem2.PEntrez.PEntrez.DbConnector","shortname":"DbConnector"},
+{"name":"EntrezSystem2.PEntrez.ParamContainer","type":"Portlet","realname":"EntrezSystem2.PEntrez.PEntrez.ParamContainer","shortname":"ParamContainer"},
+{"name":"EntrezSystem2.PEntrez.MyNcbi","type":"Portlet","realname":"EntrezSystem2.PEntrez.PEntrez.MyNcbi","shortname":"MyNcbi"},
+{"name":"EntrezSystem2.PEntrez.UserPreferenceUrlParamContainer","type":"Portlet","realname":"EntrezSystem2.PEntrez.PEntrez.UserPreferenceUrlParamContainer","shortname":"UserPreferenceUrlParamContainer"},
+{"name":"EntrezSystem2.PEntrez.GridProperty","type":"Portlet","realname":"EntrezSystem2.PEntrez.PEntrez.GridProperty","shortname":"GridProperty"},
+{"name":"EntrezSystem2.PEntrez.Protein","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.NoPortlet","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NoPortlet","shortname":"NoPortlet"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_PageController","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_PageController","shortname":"Sequence_PageController"},
+{"name":"EntrezSystem2.PEntrez.Protein.Entrez_SearchBar","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.Entrez_SearchBar","shortname":"Entrez_SearchBar"},
+{"name":"EntrezSystem2.PEntrez.Protein.Entrez_BotRequest","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.Entrez_BotRequest","shortname":"Entrez_BotRequest"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_LimitsTab","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_LimitsTab","shortname":"Sequence_LimitsTab"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.blankToolPanel","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.blankToolPanel","shortname":"blankToolPanel"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_ResultsController","shortname":"Sequence_ResultsController"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Entrez_Filters","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.Entrez_Filters","shortname":"Entrez_Filters"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Entrez_Pager","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.Entrez_Pager","shortname":"Entrez_Pager"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_DisplayBar","shortname":"Sequence_DisplayBar"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HelpFormAttributes","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.HelpFormAttributes","shortname":"HelpFormAttributes"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Entrez_Collections","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.Entrez_Collections","shortname":"Entrez_Collections"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SpellCheck","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SpellCheck","shortname":"Sequence_SpellCheck"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SearchEngineReferralCheck","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.SearchEngineReferralCheck","shortname":"SearchEngineReferralCheck"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.KnowledgePanel","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.KnowledgePanel","shortname":"KnowledgePanel"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.HistoryDisplay","shortname":"HistoryDisplay"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Discovery_SearchDetails","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Entrez_ResultsPanel.Discovery_SearchDetails","shortname":"Discovery_SearchDetails"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.KISSensor","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.KISSensor","shortname":"KISSensor"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.MultiSensorPortlet","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.MultiSensorPortlet","shortname":"MultiSensorPortlet"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.WrongDbSensor","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.WrongDbSensor","shortname":"WrongDbSensor"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DiscoveryExptChooser","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_DiscoveryExptChooser","shortname":"Sequence_DiscoveryExptChooser"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.SequenceViewer",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle","shortname":"Sequence_ViewerTitle"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport","shortname":"Sequence_ViewerReport"}]},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_DiscoveryDbLinks","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_DiscoveryDbLinks","shortname":"Sequence_DiscoveryDbLinks"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ToolsList","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ToolsList","shortname":"Sequence_ToolsList"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_SearchTool","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_SearchTool","shortname":"Sequence_SearchTool"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerSidePanelInfo","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerSidePanelInfo","shortname":"Sequence_ViewerSidePanelInfo"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryPubMedRA","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryPubMedRA","shortname":"Sequence_DiscoveryPubMedRA"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryGeneInfo","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryGeneInfo","shortname":"Sequence_DiscoveryGeneInfo"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryViralResource","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryViralResource","shortname":"Sequence_DiscoveryViralResource"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryRefSeqs","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryRefSeqs","shortname":"Sequence_DiscoveryRefSeqs"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryHomologs","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryHomologs","shortname":"Sequence_DiscoveryHomologs"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.LinkOutPortlet","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.LinkOutPortlet","shortname":"LinkOutPortlet"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion","shortname":"Sequence_ViewerChangeRegion"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer","shortname":"Sequence_ViewerCustomizer"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Discovery_Structure","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Discovery_Structure","shortname":"Discovery_Structure"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.blank","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.blank","shortname":"blank"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryIdenticalProteins","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryIdenticalProteins","shortname":"Sequence_DiscoveryIdenticalProteins"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryProteinClusters","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryProteinClusters","shortname":"Sequence_DiscoveryProteinClusters"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryBioSystems","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryBioSystems","shortname":"Sequence_DiscoveryBioSystems"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.blank4","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.blank4","shortname":"blank4"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.blank5","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.blank5","shortname":"blank5"}]}]}]},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_Facets","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence_Facets","shortname":"Sequence_Facets"},
+{"name":"EntrezSystem2.PEntrez.Protein.Entrez_Clipboard","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.Entrez_Clipboard","shortname":"Entrez_Clipboard"},
+{"name":"EntrezSystem2.PEntrez.Protein.Sequence_StaticParts","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Sequence_StaticParts","shortname":"Sequence_StaticParts"},
+{"name":"EntrezSystem2.PEntrez.Protein.Entrez_Messages","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.Entrez_Messages","shortname":"Entrez_Messages"},
+{"name":"EntrezSystem2.PEntrez.Protein.NcbiJSCheck","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NcbiJSCheck","shortname":"NcbiJSCheck"},
+{"name":"EntrezSystem2.PEntrez.Protein.NCBIFooter_dynamic","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NCBIFooter_dynamic",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.NCBIFooter_dynamic.Footer_ExtraData","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NCBIFooter_dynamic.Footer_ExtraData","shortname":"Footer_ExtraData"},
+{"name":"EntrezSystem2.PEntrez.Protein.NCBIFooter_dynamic.NCBIFooter_dynamic","type":"Cluster","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NCBIFooter_dynamic.NCBIFooter_dynamic",
+"children":[{"name":"EntrezSystem2.PEntrez.Protein.NCBIFooter_dynamic.NCBIFooter_dynamic.NCBIBreadcrumbs","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NCBIFooter_dynamic.NCBIFooter_dynamic.NCBIBreadcrumbs","shortname":"NCBIBreadcrumbs"},
+{"name":"EntrezSystem2.PEntrez.Protein.NCBIFooter_dynamic.NCBIFooter_dynamic.NCBIHelpDesk","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NCBIFooter_dynamic.NCBIFooter_dynamic.NCBIHelpDesk","shortname":"NCBIHelpDesk"},
+{"name":"EntrezSystem2.PEntrez.Protein.NCBIFooter_dynamic.NCBIFooter_dynamic.NCBIApplog_NoScript_Ping","type":"Portlet","realname":"EntrezSystem2.PEntrez.Protein.Sequence.Entrez_Database.NCBIFooter_dynamic.NCBIFooter_dynamic.NCBIApplog_NoScript_Ping","shortname":"NCBIApplog_NoScript_Ping"}]}]}]}]}]};
+-->
+  </script>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <link href="//static.pubmed.gov/portal/portal3rc.fcgi/4213540/css/3808861/3917732/3974050/3751656/3395415/14534/4062871/4186458/4016739/4075711/12930/4033350/4128070/3861632/4200659/4197480/4201891/4091728/3257261/3325043/3325044/9685/35809/36029/2279/3395586/2744335.css" rel="stylesheet" type="text/css"/>
+  <link href="//static.pubmed.gov/portal/portal3rc.fcgi/4213540/css/3501913/1303451.css" media="print" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var ObjectLinks=[{i:0, ename: "p$ExL", esid:"*", sname: "p$ExL", ssid:"*", dname:"p$el", dsid:"0",m:"CopyValue",p:[],f: function(src, dst) {fn_CopyValue(src, dst);}}]
+
+
+var ActiveNames = {"p$ExL":1, "EntrezSystem2.PEntrez.DbConnector.Cmd":0, "EntrezSystem2.PEntrez.DbConnector.Db":0, "EntrezSystem2.PEntrez.DbConnector.IdsFromResult":0, "EntrezSystem2.PEntrez.DbConnector.LastDb":0, "EntrezSystem2.PEntrez.DbConnector.LastIdsFromResult":0, "EntrezSystem2.PEntrez.DbConnector.LastQueryKey":0, "EntrezSystem2.PEntrez.DbConnector.LastTabCmd":0, "EntrezSystem2.PEntrez.DbConnector.LinkName":0, "EntrezSystem2.PEntrez.DbConnector.LinkReadableName":0, "EntrezSystem2.PEntrez.DbConnector.LinkSrcDb":0, "EntrezSystem2.PEntrez.DbConnector.QueryKey":0, "EntrezSystem2.PEntrez.DbConnector.TabCmd":0, "EntrezSystem2.PEntrez.DbConnector.Term":0, "EntrezSystem2.PEntrez.Protein.Sequence_PageController.PreviousPageName":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.ClearHistory":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.Cmd":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryOn":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.ExpandGaps":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.InUse":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.ItemCount":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.db":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.display_type":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.maxdownloadsize":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.ncbi_phid":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.report":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.Database":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.Report":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.ReportShortCut":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.ResultCount":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.CurrFilter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Db":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Display":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FFormat":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FShowgi":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FileFormat":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FileSort":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Format":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Id":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastFormat":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastPageSize":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastPresentation":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastSort":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PageSize":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Presentation":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PrevPageSize":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PrevPresentation":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PrevSort":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.QueryKey":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.ResultCount":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendTo":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendToSubmit":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SetDisplay":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Sort":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.ViewerParams":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.radio_analysis_tool":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.uid":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController.AccnsFromResult":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController.ResultCount":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController.RunLastQuery":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_DiscoveryDbLinks.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.LinkOutPortlet.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryGeneInfo.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryHomologs.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryPubMedRA.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryRefSeqs.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ToolsList.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.ChangeRegion":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Contig":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.From":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Max":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.SetSelRegion":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.To":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Topology":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.CDD":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.Customized":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.SetView":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.ShowCDDs":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.Shutter":0, "EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.extrafeat":0};
+  </script>
+ </head>
+ <body>
+  <div class="grid">
+   <div class="col twelve_col nomargin shadow">
+    <form action="/protein" enctype="application/x-www-form-urlencoded" id="EntrezForm" method="post" name="EntrezForm" onsubmit="return false;">
+     <div xmlns:xi="http://www.w3.org/2001/XInclude">
+      <!-- no javascript message -->
+      <noscript>
+       <p class="nojs">
+        <strong>
+         Warning:
+        </strong>
+        The NCBI web site requires JavaScript to function.
+        <a href="/guide/browsers/#enablejs" target="_blank" title="Learn how to enable JavaScript">
+         more...
+        </a>
+       </p>
+      </noscript>
+      <div id="universal_header" xml:base="http://127.0.0.1/sites/static/header_footer/" xmlns="http://www.w3.org/1999/xhtml">
+       <section class="usa-banner">
+        <div class="usa-accordion">
+         <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner">
+           <img alt="U.S. flag" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/favicons/favicon-57.png"/>
+           <p>
+            An official website of the United States government
+           </p>
+           <button aria-controls="gov-banner-top" aria-expanded="false" class="non-usa-accordion-button usa-banner-button" type="button">
+            <span class="usa-banner-button-text">
+             Here's how you know
+            </span>
+           </button>
+          </div>
+         </header>
+         <div aria-hidden="true" class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner-top">
+          <div class="usa-banner-guidance-gov usa-width-one-half">
+           <img alt="Dot gov" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-dot-gov.svg"/>
+           <div class="usa-media_block-body">
+            <p>
+             <strong>
+              The .gov means it's official.
+             </strong>
+             <br/>
+             Federal government websites often end in .gov or .mil. Before
+							sharing sensitive information, make sure you're on a federal
+							government site.
+            </p>
+           </div>
+          </div>
+          <div class="usa-banner-guidance-ssl usa-width-one-half">
+           <img alt="Https" class="usa-banner-icon usa-media_block-img" src="https://www.ncbi.nlm.nih.gov/coreutils/uswds/img/icon-https.svg"/>
+           <div class="usa-media_block-body">
+            <p>
+             <strong>
+              The site is secure.
+             </strong>
+             <br/>
+             The
+             <strong>
+              https://
+             </strong>
+             ensures that you are connecting to the
+							official website and that any information you provide is encrypted
+							and transmitted securely.
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+       <div class="usa-overlay"/>
+       <header class="ncbi-header" data-section="Header" role="banner">
+        <div class="usa-grid">
+         <div class="usa-width-one-whole">
+          <div class="ncbi-header__logo">
+           <a aria-label="NCBI Logo" class="logo" data-ga-action="click_image" data-ga-label="NIH NLM Logo" href="/">
+            <img alt="NIH NLM Logo" src="https://www.ncbi.nlm.nih.gov/coreutils/nwds/img/logos/AgencyLogo.svg"/>
+           </a>
+          </div>
+          <div class="ncbi-header__account">
+           <a class="usa-button header-button" data-ga-action="open_menu" data-ga-label="account_menu" href="https://account.ncbi.nlm.nih.gov" id="account_login" style="display:none">
+            Log in
+           </a>
+           <button aria-controls="account_popup" class="header-button" id="account_info" style="display:none" type="button">
+            <span aria-hidden="true" class="fa fa-user">
+             <svg height="20px" viewBox="0 0 24 24" width="20px" xmlns="http://www.w3.org/2000/svg">
+              <g style="fill: #fff">
+               <ellipse cx="12" cy="8" rx="5" ry="6"/>
+               <path d="M21.8,19.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9s-2.2-0.3-3.2-0.9    C8.3,14.8,7.6,14.7,7,15c-2.2,0.9-3.9,2.4-4.8,4.2C1.5,20.5,2.6,22,4.1,22h15.8C21.4,22,22.5,20.5,21.8,19.1z"/>
+              </g>
+             </svg>
+            </span>
+            <span aria-hidden="true" class="username desktop-only" id="uname_short"/>
+            <span class="sr-only">
+             Show account info
+            </span>
+           </button>
+          </div>
+          <div class="ncbi-popup-anchor">
+           <div aria-hidden="true" class="ncbi-popup account-popup" id="account_popup">
+            <div class="ncbi-popup-head">
+             <button class="ncbi-close-button" data-ga-action="close_menu" data-ga-label="account_menu" type="button">
+              <span class="fa fa-times">
+               <svg height="24px" viewBox="0 0 48 48" width="24px" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/>
+               </svg>
+              </span>
+              <span class="usa-sr-only">
+               Close
+              </span>
+             </button>
+             <h4>
+              Account
+             </h4>
+            </div>
+            <div class="account-user-info">
+             Logged in as:
+             <br/>
+             <b>
+              <span class="username" id="uname_long">
+               username
+              </span>
+             </b>
+            </div>
+            <div class="account-links">
+             <ul class="usa-unstyled-list">
+              <li>
+               <a class="set-base-url" data-ga-action="click_menu_item" data-ga-label="account_myncbi" href="/myncbi/" id="account_myncbi">
+                Dashboard
+               </a>
+              </li>
+              <li>
+               <a class="set-base-url" data-ga-action="click_menu_item" data-ga-label="account_pubs" href="/myncbi/collections/bibliography/" id="account_pubs">
+                Publications
+               </a>
+              </li>
+              <li>
+               <a class="set-base-url" data-ga-action="click_menu_item" data-ga-label="account_settings" href="/account/settings/" id="account_settings">
+                Account settings
+               </a>
+              </li>
+              <li>
+               <a class="set-base-url" data-ga-action="click_menu_item" data-ga-label="account_logout" href="/account/signout/" id="account_logout">
+                Log out
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </header>
+       <div aria-label="access keys" role="navigation">
+        <a accesskey="0" class="usa-sr-only" href="https://www.ncbi.nlm.nih.gov/guide/browsers/#ncbi_accesskeys" id="nws_header_accesskey_0" tabindex="-1">
+         Access keys
+        </a>
+        <a accesskey="1" class="usa-sr-only" href="https://www.ncbi.nlm.nih.gov" id="nws_header_accesskey_1" tabindex="-1">
+         NCBI Homepage
+        </a>
+        <a accesskey="2" class="set-base-url usa-sr-only" href="/myncbi/" id="nws_header_accesskey_2" tabindex="-1">
+         MyNCBI Homepage
+        </a>
+        <a accesskey="3" class="usa-sr-only" href="#maincontent" id="nws_header_accesskey_3" tabindex="-1">
+         Main Content
+        </a>
+        <a accesskey="4" class="usa-sr-only" href="#" id="nws_header_accesskey_4" tabindex="-1">
+         Main Navigation
+        </a>
+       </div>
+       <section data-section="Alerts">
+        <div class="ncbi-alerts-placeholder"/>
+       </section>
+      </div>
+      <div class="header">
+       <!-- logo -->
+       <div class="res_logo">
+        <h1 class="res_name">
+         <a href="/protein">
+          Protein
+         </a>
+        </h1>
+       </div>
+       <!-- SearchBar -->
+       <div class="search">
+        <div class="search_form">
+         <label class="offscreen_noflow" for="database">
+          Search database
+         </label>
+         <select id="database">
+          <option value="gquery">
+           All Databases
+          </option>
+          <option value="assembly">
+           Assembly
+          </option>
+          <option value="biocollections">
+           Biocollections
+          </option>
+          <option value="bioproject">
+           BioProject
+          </option>
+          <option value="biosample">
+           BioSample
+          </option>
+          <option value="books">
+           Books
+          </option>
+          <option value="clinvar">
+           ClinVar
+          </option>
+          <option value="cdd">
+           Conserved Domains
+          </option>
+          <option value="gap">
+           dbGaP
+          </option>
+          <option value="dbvar">
+           dbVar
+          </option>
+          <option value="gene">
+           Gene
+          </option>
+          <option value="genome">
+           Genome
+          </option>
+          <option value="gds">
+           GEO DataSets
+          </option>
+          <option value="geoprofiles">
+           GEO Profiles
+          </option>
+          <option value="gtr">
+           GTR
+          </option>
+          <option value="homologene">
+           HomoloGene
+          </option>
+          <option value="ipg">
+           Identical Protein Groups
+          </option>
+          <option data-ac_dict="medgen_disease_name" value="medgen">
+           MedGen
+          </option>
+          <option data-ac_dict="mesh_suggestions" value="mesh">
+           MeSH
+          </option>
+          <option value="nlmcatalog">
+           NLM Catalog
+          </option>
+          <option value="nuccore">
+           Nucleotide
+          </option>
+          <option value="omim">
+           OMIM
+          </option>
+          <option value="pmc">
+           PMC
+          </option>
+          <option value="popset">
+           PopSet
+          </option>
+          <option selected="selected" value="protein">
+           Protein
+          </option>
+          <option value="proteinclusters">
+           Protein Clusters
+          </option>
+          <option value="protfam">
+           Protein Family Models
+          </option>
+          <option value="pcassay">
+           PubChem BioAssay
+          </option>
+          <option value="pccompound">
+           PubChem Compound
+          </option>
+          <option value="pcsubstance">
+           PubChem Substance
+          </option>
+          <option data-ac_dict="pm_related_queries_2" value="pubmed">
+           PubMed
+          </option>
+          <option value="snp">
+           SNP
+          </option>
+          <option value="sra">
+           SRA
+          </option>
+          <option value="structure">
+           Structure
+          </option>
+          <option value="taxonomy">
+           Taxonomy
+          </option>
+          <option value="toolkit">
+           ToolKit
+          </option>
+          <option value="toolkitall">
+           ToolKitAll
+          </option>
+          <option value="toolkitbookgh">
+           ToolKitBookgh
+          </option>
+         </select>
+         <div class="nowrap">
+          <label accesskey="/" class="offscreen_noflow" for="term">
+           Search term
+          </label>
+          <div class="nowrap">
+           <input autocomplete="off" class="jig-ncbiclearbutton jig-ncbiautocomplete" data-jigconfig="isEnabled:false,disableUrl:'NcbiSearchBarAutoComplCtrl'" data-sbconfig="ds:'no',pjs:'yes',afs:'yes'" id="term" name="term" title="Search Protein" type="text" value=""/>
+          </div>
+          <button class="button_search nowrap" cmd="go" id="search" type="submit">
+           Search
+          </button>
+         </div>
+        </div>
+        <ul class="searchlinks inline_list">
+         <set/>
+         <li>
+          <a href="/protein/advanced">
+           Advanced
+          </a>
+         </li>
+         <li class="help">
+          <a class="jig-ncbihelpwindow" href="/books/NBK44864/" id="help" name="help" target="ncbihelp">
+           Help
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <input name="EntrezSystem2.PEntrez.Protein.Sequence_PageController.PreviousPageName" sid="1" type="hidden" value="results"/>
+      <div class="" id="faceted_search">
+       <h2 class="offscreen_noflow">
+        Result Filters
+       </h2>
+      </div>
+      <div class="col nine_col" id="maincontent">
+       <div class="content">
+        <div class="results_settings one_setting long_list">
+         <ul class="inline_list left display_settings">
+          <li>
+           <a class="jig-ncbipopper" data-jigconfig="triggerPosition : 'bottom center',destPosition : 'top center',destSelector : '#display_settings_menu_report',                     hasArrow : false,openEvent : 'click',closeEvent : 'click',isTriggerElementCloseClick: false,addCloseButton : false,                      groupName: 'entrez_pg'" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Display" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Display" sid="0">
+            GenPept
+            <span class="tgt_dark" href="#"/>
+           </a>
+          </li>
+         </ul>
+         <div class="disp_settings tabPopper" id="display_settings_menu_report">
+          <fieldset class="format">
+           <legend>
+            Format
+           </legend>
+           <ul class="column_list">
+            <li>
+             <input format="" id="docsum" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="1" type="radio" value="docsum"/>
+             <label for="docsum">
+              Summary
+             </label>
+            </li>
+            <li>
+             <input checked="true" format="" id="genpept" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="2" type="radio" value="genpept"/>
+             <label for="genpept">
+              GenPept
+             </label>
+            </li>
+            <li>
+             <input format="" id="gpwithparts" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="3" type="radio" value="gpwithparts"/>
+             <label for="gpwithparts">
+              GenPept (full)
+             </label>
+            </li>
+            <li>
+             <input format="" id="fasta" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="4" type="radio" value="fasta"/>
+             <label for="fasta">
+              FASTA
+             </label>
+            </li>
+            <li>
+             <input format="text" id="fastatext" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="5" type="radio" value="fasta"/>
+             <label for="fastatext">
+              FASTA (text)
+             </label>
+            </li>
+            <li>
+             <input format="" id="graph" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="6" type="radio" value="graph"/>
+             <label for="graph">
+              Graphics
+             </label>
+            </li>
+            <li>
+             <input format="" id="asn1" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="7" type="radio" value="asn1"/>
+             <label for="asn1">
+              ASN.1
+             </label>
+            </li>
+            <li>
+             <input format="" id="girevhist" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="8" type="radio" value="girevhist"/>
+             <label for="girevhist">
+              Revision History
+             </label>
+            </li>
+            <li>
+             <input format="text" id="accnlisttext" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="9" type="radio" value="accnlist"/>
+             <label for="accnlisttext">
+              Accession List
+             </label>
+            </li>
+            <li>
+             <input format="text" id="gilisttext" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.sPresentation" sid="10" type="radio" value="gilist"/>
+             <label for="gilisttext">
+              GI List
+             </label>
+            </li>
+           </ul>
+          </fieldset>
+         </div>
+         <button class="button_apply ncbipopper-close-button" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SetDisplay" sid="2" style="display:none">
+          Apply
+         </button>
+         <h4 class="content_header send_to align_right jig-ncbipopper" data-jigconfig="triggerPosition:'bottom center', destPosition : 'top center',destSelector : '#send_to_menu', hasArrow : false,                 openEvent : 'click',closeEvent : 'click', isTriggerElementCloseClick: false, addCloseButton:true, groupName: 'entrez_pg', adjustFit:'none'" id="sendto">
+          <a class="tgt_dark" href="#" sourceContent="send_to_menu">
+           Send to:
+          </a>
+          <script type="text/javascript">
+           jQuery(document).ready( function () {
+                            jQuery("#send_to_menu input[type='radio']").click( function () {
+                                var selectedValue = jQuery(this).val().toLowerCase();
+                                var selectedDiv = jQuery("#send_to_menu div." + selectedValue);
+                                
+                                if(selectedDiv.is(":hidden")){ 
+                                jQuery("#send_to_menu div.submenu:visible").slideUp();
+                                selectedDiv.slideDown();
+                                }
+                            });
+                        
+                        });
+                        
+                        jQuery("#sendto").bind("ncbipopperclose", function(){
+                            jQuery("#send_to_menu div.submenu:visible").css("display","none");
+                            jQuery("#send_to_menu input[type='radio']:checked").attr("checked",false);
+                        });
+          </script>
+         </h4>
+         <div class="tabPopper send_to" id="send_to_menu">
+          <fieldset>
+           <legend>
+            Choose Destination
+           </legend>
+           <ul class="column_list">
+            <li>
+             <input id="dest_File" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendTo" sid="1" type="radio" value="File"/>
+             <label for="dest_File">
+              File
+             </label>
+            </li>
+            <li>
+             <input id="dest_AddToClipboard" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendTo" sid="2" type="radio" value="AddToClipboard"/>
+             <label for="dest_AddToClipboard">
+              Clipboard
+             </label>
+            </li>
+            <li>
+             <input id="dest_AddToCollections" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendTo" sid="3" type="radio" value="AddToCollections"/>
+             <label for="dest_AddToCollections">
+              Collections
+             </label>
+            </li>
+            <li>
+             <input id="dest_AnalysisTool" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendTo" sid="4" type="radio" value="AnalysisTool"/>
+             <label for="dest_AnalysisTool">
+              Analysis Tool
+             </label>
+            </li>
+           </ul>
+          </fieldset>
+          <div class="submenu file" id="submenu_File" style="display: none;">
+           <p class="hidden" id="submenu_File_hint"/>
+           <ul>
+            <li>
+             <label for="file_format">
+              Format
+             </label>
+             <select id="file_format" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FFormat" onchange="x_showgi(this)" sid="1">
+              <option value="docsum">
+               Summary
+              </option>
+              <option selected="selected" showgi="true" value="genpept">
+               GenPept
+              </option>
+              <option showgi="true" value="gpwithparts">
+               GenPept (full)
+              </option>
+              <option showgi="true" value="fasta">
+               FASTA
+              </option>
+              <option value="asn1">
+               ASN.1
+              </option>
+              <option value="xml">
+               XML
+              </option>
+              <option value="gpc_xml">
+               INSDSeq XML
+              </option>
+              <option showgi="true" value="fasta_xml">
+               TinySeq XML
+              </option>
+              <option value="ft">
+               Feature Table
+              </option>
+              <option value="fasta_cds_na">
+               FASTA CDS
+              </option>
+              <option format="text" value="accnlist">
+               Accession List
+              </option>
+              <option format="text" value="gilist">
+               GI List
+              </option>
+              <option format="text" value="gff3">
+               GFF3
+              </option>
+             </select>
+            </li>
+            <script type="text/javascript">
+             function x_showgi(el) {
+                    // ID-4455
+                    var elSeq = document.getElementById("file_showgi_section");
+                        if (el.options[el.selectedIndex].getAttribute("showgi") === "true") {
+                            elSeq.style.display = "";
+                        } else {
+                            elSeq.style.display = "none";
+                        }
+                    }
+                    setTimeout(function() {
+                        x_showgi(document.getElementById("file_format"));
+                    }, 1000);
+            </script>
+            <li id="file_showgi_section">
+             <label for="file_showgi" style="display:inline">
+              Show GI
+             </label>
+             <input id="file_showgi" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FShowgi" sid="1" type="checkbox"/>
+            </li>
+           </ul>
+           <button class="button_apply file ncbipopper-close-button" cmd="File" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendToSubmit" sid="1" type="submit">
+            Create File
+           </button>
+          </div>
+          <div class="submenu addtoclipboard" id="submenu_AddToClipboard" style="display: none;">
+           <p class="hidden" id="submenu_AddToClipboard_hint"/>
+           <button class="button_apply clipboard ncbipopper-close-button" cmd="AddToClipboard" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendToSubmit" sid="2" type="submit">
+            Add to Clipboard
+           </button>
+          </div>
+          <div class="submenu addtocollections" id="submenu_AddToCollections" style="display: none;">
+           <p class="hidden" id="submenu_AddToCollections_hint"/>
+           <button class="button_apply collections ncbipopper-close-button" cmd="AddToCollections" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendToSubmit" sid="3" type="submit">
+            Add to Collections
+           </button>
+          </div>
+          <script type="text/javascript">
+           function x_analysistool_evt(el) {
+            var elBtn = document.getElementById("analysistool_submit_btn");
+            console.info(" x_analysistool_evt, el=", el);
+            elBtn.setAttribute("submit_url", el.getAttribute("submit_url"));
+            }
+          </script>
+          <div class="submenu analysistool" id="submenu_AnalysisTool" style="display: none;">
+           <fieldset>
+            <legend>
+             Choose Sequence Analysis Tool
+            </legend>
+            <ul class="column_list">
+             <li>
+              <input checked="checked" id="analysistool_BLAST" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.radio_analysis_tool" onclick="x_analysistool_evt(this)" sid="1" submit_url="//blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&amp;PROGRAM=blastp&amp;BLAST_PROGRAMS=blastp&amp;LINK_LOC=protein&amp;PAGE_TYPE=BlastSearch&amp;QUERY=AAB30058.2" type="radio" value="BLAST">
+               <label for="analysistool_BLAST">
+                BLAST
+               </label>
+              </input>
+             </li>
+             <li>
+              <input id="analysistool_CDD" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.radio_analysis_tool" onclick="x_analysistool_evt(this)" sid="4" submit_url="/Structure/cdd/wrpsb.cgi?INPUT_TYPE=live&amp;SEQUENCE=AAB30058.2" type="radio" value="CDD">
+               <label for="analysistool_CDD">
+                Conserved Domains Search
+               </label>
+              </input>
+             </li>
+            </ul>
+           </fieldset>
+           <p class="submenu_analysistool_hint hidden" id="submenu_AnalysisTool_hintNaN"/>
+           <button class="button_apply analysistool ncbipopper-close-button" cmd="AnalysisTool" id="analysistool_submit_btn" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.SendToSubmit" sid="4" submit_url="//blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&amp;PROGRAM=blastp&amp;BLAST_PROGRAMS=blastp&amp;LINK_LOC=protein&amp;PAGE_TYPE=BlastSearch&amp;QUERY=AAB30058.2" type="submit">
+            Submit
+           </button>
+          </div>
+         </div>
+         <div>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Db" sid="2" type="hidden" value="protein"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.QueryKey" sid="2" type="hidden" value="1"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.CurrFilter" sid="2" type="hidden" value="all"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.ResultCount" sid="2" type="hidden" value="1"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.ViewerParams" sid="2" type="hidden"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Id" sid="2" type="hidden" value="AAB30058.2"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.uid" sid="2" type="hidden" value="7717238"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FileFormat" sid="2" type="hidden" value="genpept"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastPresentation" sid="2" type="hidden" value="genpept"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Presentation" sid="2" type="hidden" value="genpept"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PageSize" sid="2" type="hidden" value="20"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastPageSize" sid="2" type="hidden" value="20"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Sort" sid="2" type="hidden" value=""/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastSort" sid="2" type="hidden" value=""/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.FileSort" sid="2" type="hidden" value=""/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.Format" sid="2" type="hidden" value=""/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.LastFormat" sid="2" type="hidden" value=""/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PrevPageSize" sid="2" type="hidden" value="20"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PrevPresentation" sid="2" type="hidden" value="genpept"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_DisplayBar.PrevSort" sid="2" type="hidden" value=""/>
+          <input id="coll_startindex" name="CollectionStartIndex" type="hidden" value="1"/>
+         </div>
+        </div>
+        <div>
+        </div>
+        <div class="">
+         <div>
+          <span class="nowrap" id="result_sel"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController.ResultCount" sid="1" type="hidden" value="1"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController.RunLastQuery" sid="1" type="hidden"/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_ResultsController.AccnsFromResult" sid="1" type="hidden" value=""/>
+         </div>
+        </div>
+        <div class="empty" id="messagearea">
+        </div>
+        <div class="seqrprt seqviewer">
+         <div class="rprtheader">
+          <h1>
+           keratin, partial [Homo sapiens]
+          </h1>
+          <p class="itemid">
+           GenBank: AAB30058.2
+          </p>
+          <p class="aux">
+           <span class="rprtlinks">
+            <a class="dblinks" href="/ipg/AAB30058.2" ref="ordinalpos=1&amp;ncbi_uid=7717238&amp;link_uid=7717238&amp;linksrc=genpept_ipg">
+             Identical Proteins
+            </a>
+            <a class="dblinks" href="/protein/AAB30058.2?report=fasta" id="ReportShortCut6" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.ReportShortCut" ref="ordinalpos=1&amp;ncbi_uid=7717238&amp;link_uid=7717238&amp;linksrc=genpept_fasta" sid="16">
+             FASTA
+            </a>
+            <a class="dblinks" href="/protein/AAB30058.2?report=graph" id="ReportShortCut7" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.ReportShortCut" ref="ordinalpos=1&amp;ncbi_uid=7717238&amp;link_uid=7717238&amp;linksrc=genpept_graph" sid="17">
+             Graphics
+            </a>
+           </span>
+          </p>
+          <div class="hidden">
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.Database" sid="1" type="hidden" value="protein"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.ResultCount" sid="1" type="hidden" value="1"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerTitle.Report" sid="1" type="hidden" value="genpept"/>
+          </div>
+         </div>
+         <div>
+          <div SequenceSize="3094" VirtualSequence="true" class="seq gbff" id="viewercontent1" val="7717238"/>
+          <div class="hidden">
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.db" sid="1" type="hidden" value="protein"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.report" sid="1" type="hidden" value="genpept"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.maxdownloadsize" sid="1" type="hidden" value="1000000"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.display_type" sid="1" type="hidden" value="single"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.ItemCount" sid="1" type="hidden" value="1"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.InUse" sid="1" type="hidden" value=""/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.ExpandGaps" sid="1" type="hidden" value=""/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.SequenceViewer.Sequence_ViewerReport.ncbi_phid" sid="1" type="hidden" value="CE8A25AB3FF632B1000000000A7208D5"/>
+          </div>
+          <div id="fh_bar">
+           <div id="fh_bar_details_body"/>
+           <div id="fh_bar_warning"/>
+           <div class="fh_bar_left">
+            <select id="fh_bar_select" ref="$ref">
+             <option>
+              no features
+             </option>
+            </select>
+            <a href="#" id="fh_bar_to_feature" ref="discoid=featurehighlight&amp;log$=featurehighlight" title="Jump to the feature">
+             Feature
+            </a>
+            <div class="hide nav_control" id="feat_nav_control">
+             <button href="#" id="fh_bar_first" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+              First
+             </button>
+             <button id="fh_bar_previous" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+              Previous
+             </button>
+             <span id="fh_bar_total" ref="discoid=featurehighlight&amp;log$=featurehighlight"/>
+             <button id="fh_bar_next" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+              Next
+             </button>
+             <button id="fh_bar_last" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+              Last
+             </button>
+            </div>
+            <span id="fh_bar_message"/>
+           </div>
+           <div class="fh_bar_right">
+            <span>
+             Display:
+            </span>
+            <a href="#" id="fh_bar_fasta" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+             FASTA
+            </a>
+            <a href="#" id="fh_bar_genbank" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+             GenBank
+            </a>
+            <a href="/books/NBK44863/#sequencesquickstart.How_can_I_locate_and" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+             Help
+            </a>
+            <button id="fh_bar_hide" ref="discoid=featurehighlight&amp;log$=featurehighlight">
+             Close
+            </button>
+           </div>
+           <span class="fh_bar_details_ph">
+            <a class="tgt_dark" href="#" id="fh_bar_details">
+             Details
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+        <div id="messagearea_bottom">
+        </div>
+        <div class=" bottom">
+        </div>
+       </div>
+      </div>
+      <div class="supplemental col three_col last">
+       <h2 class="offscreen_noflow">
+        Supplemental Content
+       </h2>
+       <div>
+        <!-- ID-4171  GenBank Sammies ad on nucleotide docsum and record pages -->
+        <div class="portlet ctrl">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Change region shown
+           </h3>
+          </div>
+          <a class="portlet_shutter shutter_closed" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Shutter" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content pagectrl" style="display: none;">
+          <p>
+           <input checked="checked" id="crwholeregion" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.ChangeRegion" sid="1" type="radio" value="whole"/>
+           <label for="crwholeregion">
+            Whole sequence
+           </label>
+           <br/>
+           <input id="crselregion" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.ChangeRegion" sid="2" type="radio" value="sel"/>
+           <label for="crselregion">
+            Selected region
+           </label>
+           <br/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Topology" sid="1" type="hidden" value="linear"/>
+           <label for="crfrom">
+            from:
+           </label>
+           <input class="text" id="crfrom" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.From" sid="1" size="8" type="text" value=""/>
+           <label for="crto">
+            to:
+           </label>
+           <input class="text" id="crto" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.To" sid="1" size="8" type="text" value=""/>
+          </p>
+          <div class="ctrlbtn">
+           <button id="updateselregion" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.SetSelRegion" sid="1">
+            Update View
+           </button>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Max" sid="1" type="hidden" value="244"/>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerChangeRegion.Contig" sid="1" type="hidden" value=""/>
+          </div>
+         </div>
+        </div>
+        <div class="portlet ctrl">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Customize view
+           </h3>
+          </div>
+          <a class="portlet_shutter shutter_closed" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.Shutter" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content pagectrl" style="display: none;">
+          <s cddcount="2"/>
+          <h4>
+           Features added by NCBI
+          </h4>
+          <p>
+           <input XXbitmask="8" checked="checked" id="SCDcdd" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.CDD" sid="1" type="checkbox" value="true"/>
+           <label for="SCDcdd">
+            Conserved Domains
+           </label>
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.ShowCDDs" sid="1" type="hidden" value=""/>
+          </p>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.extrafeat" sid="1" type="hidden" value=""/>
+          <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.Customized" sid="1" type="hidden" value="false"/>
+          <div class="ctrlbtn">
+           <button id="SCDsetview" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ViewerCustomizer.SetView" sid="1">
+            Update View
+           </button>
+          </div>
+         </div>
+        </div>
+        <div class="portlet brieflink">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Analyze this sequence
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ToolsList.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_ToolsList.Shutter" pgsec_name="Sequence_ToolsList" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content Sequence_ToolsList">
+          <ul>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="//blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&amp;PROGRAM=blastp&amp;BLAST_PROGRAMS=blastp&amp;QUERY=AAB30058.2&amp;LINK_LOC=protein&amp;PAGE_TYPE=BlastSearch" ref="log$=seqview_list_blast&amp;discoId=seqtools">
+             Run BLAST
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Find regions of similarity between this sequence and other sequences
+                    using BLAST.
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/Structure/cdd/wrpsb.cgi?INPUT_TYPE=live&amp;SEQUENCE=AAB30058.2" ref="log$=seqview_list_cdsearch&amp;discoId=seqtools">
+             Identify Conserved Domains
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             View conserved domains detected in this protein sequence using
+                            CD-search.
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/nuccore/AAB30058.2?feature=any" ref="log$=seqview_list_highlight&amp;highlightsource=any&amp;discoId=seqtools">
+             Highlight Sequence Features
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Opens the Highlight Feature Bar and highlights feature annotations
+                        from the FEATURES table of the record. The Highlight Feature Bar can be used
+                        to navigate to and highlight other features and provides links to display
+                        the highlighted region separately. Links in the FEATURES table will also
+                        highlight the corresponding region of the sequence.
+             <a href="/books/NBK44863/#sequencesquickstart.How_can_I_locate_and">
+              More...
+             </a>
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="javascript:Portal.$send('SeqSearchClicked')" ref="log$=seqview_list_find&amp;discoId=seqtools">
+             Find in this Sequence
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Finds sub-sequences or patterns in the sequence and highlights the
+                        matching regions. The tool works with standard single letter nucleotide or
+                        protein codes including ambiguities and can match Prosite patterns in
+                        protein sequences.
+             <a href="/books/NBK44863/#sequencesquickstart.How_can_I_search_for">
+              More...
+             </a>
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Articles about the KRT16 gene
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryPubMedRA.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryPubMedRA.Shutter" pgsec_name="Sequence_DiscoveryPubMedRA" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li class="brieflinkpopper two_line">
+            <a class="brieflinkpopperctrl" href="/pubmed/36149327" ref="ordinalpos=1&amp;linkpos=1&amp;log$=seqview_pubmed&amp;ncbi_uid=7717238&amp;link_uid=36149327">
+             A novel KRT16 frameshift variant causing pachyonychia congenita by re-initiation of translation.
+            </a>
+            <span class="source">
+             [J Eur Acad Dermatol Venereol. ...]
+            </span>
+            <div class="brieflinkpop offscreen_noflow">
+             A novel KRT16 frameshift variant causing pachyonychia congenita by re-initiation of translation.
+             <div class="brieflinkpopdesc">
+              <em class="author">
+               Wang S, Bai Q, Lee M, Lin Z, Cai L, Wang H.
+              </em>
+              <em class="cit">
+               J Eur Acad Dermatol Venereol. 2023 Feb; 37(2):e166-e168. Epub 2022 Oct 12.
+              </em>
+             </div>
+            </div>
+           </li>
+           <li class="brieflinkpopper two_line">
+            <a class="brieflinkpopperctrl" href="/pubmed/30859684" ref="ordinalpos=1&amp;linkpos=2&amp;log$=seqview_pubmed&amp;ncbi_uid=7717238&amp;link_uid=30859684">
+             A KRT16 mutation in the first Chinese pedigree with Pachyonychia congenita and review of the literatures.
+            </a>
+            <span class="source">
+             [J Cosmet Dermatol. 2019]
+            </span>
+            <div class="brieflinkpop offscreen_noflow">
+             A KRT16 mutation in the first Chinese pedigree with Pachyonychia congenita and review of the literatures.
+             <div class="brieflinkpopdesc">
+              <em class="author">
+               Xu Q, Zhang Q, Tang L, Jin L, Wang X, Kan L, Zheng X, Yang S.
+              </em>
+              <em class="cit">
+               J Cosmet Dermatol. 2019 Dec; 18(6):1930-1934. Epub 2019 Mar 12.
+              </em>
+             </div>
+            </div>
+           </li>
+           <li class="brieflinkpopper two_line">
+            <a class="brieflinkpopperctrl" href="/pubmed/24357266" ref="ordinalpos=1&amp;linkpos=3&amp;log$=seqview_pubmed&amp;ncbi_uid=7717238&amp;link_uid=24357266">
+             Mutation p.Leu128Pro in the 1A domain of K16 causes pachyonychia congenita with focal palmoplantar keratoderma in a Chinese family.
+            </a>
+            <span class="source">
+             [Eur J Pediatr. 2014]
+            </span>
+            <div class="brieflinkpop offscreen_noflow">
+             Mutation p.Leu128Pro in the 1A domain of K16 causes pachyonychia congenita with focal palmoplantar keratoderma in a Chinese family.
+             <div class="brieflinkpopdesc">
+              <em class="author">
+               Dai L, Wu J, Guo H, Huang Y, Zhang K, Liu D, Fu L, Wu Y, Guan X, Bai Y, et al.
+              </em>
+              <em class="cit">
+               Eur J Pediatr. 2014 Jun; 173(6):737-41. Epub 2013 Dec 20.
+              </em>
+             </div>
+            </div>
+           </li>
+          </ul>
+          <a class="seemore" href="/pubmed?linkname=protein_pubmed_weighted&amp;from_uid=7717238" ref="ordinalpos=1&amp;log$=seqview_pubmed&amp;ncbi_uid=7717238">
+           See all...
+          </a>
+         </div>
+        </div>
+        <div class="portlet">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Reference sequence information
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryRefSeqs.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryRefSeqs.Shutter" pgsec_name="Sequence_DiscoveryRefSeqs" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li class="">
+            <a href="/nuccore/194473712" ref="log$=seqview_refseq_refseqgene&amp;ncbi_uid=7717238&amp;link_uid=194473712">
+             RefSeq genomic sequence
+            </a>
+            <div class="long_info">
+             See the genomic reference sequence for the KRT16 gene (NG_008301.1).
+            </div>
+           </li>
+           <li class="">
+            <a href="/protein/24430192" ref="log$=seqview_refseq_protein&amp;ncbi_uid=7717238&amp;link_uid=24430192">
+             RefSeq protein
+            </a>
+            <div class="long_info">
+             See the reference protein sequence for keratin, type I cytoskeletal 16  (NP_005548.2).
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            More about the KRT16 gene
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryGeneInfo.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryGeneInfo.Shutter" pgsec_name="Sequence_DiscoveryGeneInfo" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li class="">
+            <a href="/sites/entrez?db=gene&amp;cmd=retrieve&amp;list_uids=3868" ref="log$=seqview_gene&amp;ncbi_uid=7717238&amp;link_uid=3868">
+             The protein encoded by this gene is a member of the keratin gene family. The keratins are intermediate filament proteins responsible for the...
+            </a>
+            <div class="long_info">
+             Also Known As: CK16, FNEPPK, K16, K1CP...
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Homologs of the KRT16 gene
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryHomologs.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.Sequence_DiscoveryHomologs.Shutter" pgsec_name="Sequence_DiscoveryHomologs" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li class="">
+            <a href="/protein?Db=homologene&amp;Cmd=Retrieve&amp;list_uids=21145" ref="log$=seqview_homolog&amp;ncbi_uid=7717238&amp;link_uid=21145">
+             The KRT16 gene is conserved in chimpanzee, Rhesus monkey, dog, cow, mouse, and rat.
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Related information
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_DiscoveryDbLinks.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_DiscoveryDbLinks.Shutter" pgsec_name="discovery_db_links" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content DiscoveryDbLinks">
+          <ul>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/nuccore?LinkName=protein_nuccore&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=1">
+             Nucleotide
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Nucleotide sequence from coding region
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/pubmed?LinkName=protein_pubmed&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=2">
+             PubMed
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             PubMed articles cited by protein sequence record
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/taxonomy?LinkName=protein_taxonomy&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=3">
+             Taxonomy
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Taxonomy sequences associated with protein record
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/biosystems?LinkName=protein_biosystems&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=4">
+             BioSystems
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             BioSystems
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?INPUT_TYPE=precalc&amp;SEQUENCE=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=5">
+             CDD Search Results
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Display conserved domains within a protein
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/cdd?LinkName=protein_cdd_concise_2&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=6">
+             Conserved Domains (Concise)
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Link to a concise list of conserved domains in a protein
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/cdd?LinkName=protein_cdd&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=7">
+             Conserved Domains (Full)
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Link to conserved domains within a protein
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="https://www.ncbi.nlm.nih.gov/Structure/lexington/lexington.cgi?cmd=prot&amp;uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=8">
+             Domain Relatives
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Display proteins with similar conserved domain architecture
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/nuccore?LinkName=protein_nuccore_mrna&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=9">
+             Encoding mRNA
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Link from protein to encoding mRNA
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/gene?LinkName=protein_gene&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=10">
+             Gene
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Link to related Genes
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="https://www.ncbi.nlm.nih.gov/SNP/CGI/genesnpview.cgi?fromdb=protein&amp;id=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=11">
+             GeneView in dbSNP
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             SNPs linked from GeneView
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/pubmed?LinkName=protein_pubmed_weighted&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=12">
+             PubMed (Weighted)
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Links to pubmed
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="/structure?LinkName=protein_structure_related_list&amp;from_uid=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=13">
+             Related Structures (List)
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             List of related structures
+            </div>
+           </li>
+           <li class="brieflinkpopper">
+            <a class="brieflinkpopperctrl" href="https://structure.ncbi.nlm.nih.gov/Structure/cblast/cblast.cgi?client=entrez&amp;query_gi=7717238" ref="log$=recordlinks&amp;logdbfrom=protein&amp;ncbi_uid=7717238&amp;ordinalpos=1&amp;linkpos=14">
+             Related Structures (Summary)
+            </a>
+            <div class="brieflinkpop offscreen_noflow">
+             Related structures
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet brieflink">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            LinkOut to external resources
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.LinkOutPortlet.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.Sequence_SingleItemSupl.Sequence_ViewerGenbankSidePanel.LinkOutPortlet.Shutter" pgsec_name="linkout_portlet" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content">
+          <ul>
+           <li class="brieflinkpopper two_line">
+            <a class="brieflinkpopperctrl" href="http://salilab.org/modbase/search?databaseID=7717238" ref="itool=LinkOutPortlet&amp;PrId=5447&amp;uid=7717238&amp;db=protein&amp;log$=linkoutlink">
+             MODBASE, Database of Comparative Protein Structure Models (Sali Lab/UCSF)
+            </a>
+            <span class="source">
+             [MODBASE, Database of Comparat...]
+            </span>
+            <div class="brieflinkpop offscreen_noflow">
+             MODBASE, Database of Comparative Protein Structure Models (Sali Lab/UCSF)
+            </div>
+           </li>
+           <li class="brieflinkpopper two_line">
+            <a class="brieflinkpopperctrl" href="https://www.labome.com/gene/human/KRT16-antibody.html" ref="itool=LinkOutPortlet&amp;PrId=5753&amp;uid=7717238&amp;db=protein&amp;log$=linkoutlink">
+             reagents
+            </a>
+            <span class="source">
+             [ExactAntigen/Labome]
+            </span>
+            <div class="brieflinkpop offscreen_noflow">
+             reagents
+             <div class="brieflinkpopdesc">
+              ExactAntigen/Labome
+             </div>
+            </div>
+           </li>
+           <li class="brieflinkpopper two_line">
+            <a class="brieflinkpopperctrl" href="https://www.labome.com/review/gene/human/KRT16-antibody.html" ref="itool=LinkOutPortlet&amp;PrId=5753&amp;uid=7717238&amp;db=protein&amp;log$=linkoutlink">
+             reagent reviews
+            </a>
+            <span class="source">
+             [ExactAntigen/Labome]
+            </span>
+            <div class="brieflinkpop offscreen_noflow">
+             reagent reviews
+             <div class="brieflinkpopdesc">
+              ExactAntigen/Labome
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="portlet">
+         <div class="portlet_head">
+          <div class="portlet_title">
+           <h3>
+            Recent activity
+           </h3>
+          </div>
+          <a class="portlet_shutter" href="#" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.Shutter" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.Shutter" pgsec_name="recent_activity" remembercollapsed="true" sid="1" title="Show/hide content"/>
+         </div>
+         <div class="portlet_content">
+          <div class="" id="HTDisplay">
+           <input name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.Cmd" sid="1" type="hidden"/>
+           <div class="action">
+            <a cmd="ClearHT" href="?cmd=ClearHT&amp;" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.ClearHistory" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.ClearHistory" onclick="return false;" realname="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.ClearHistory" sid="1">
+             Clear
+            </a>
+            <a class="HTOn" cmd="HTOff" href="?cmd=HTOff&amp;" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle" onclick="return false;" realname="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle" sid="1">
+             Turn Off
+            </a>
+            <a class="HTOff" cmd="HTOn" href="?cmd=HTOn&amp;" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle" onclick="return false;" realname="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryToggle" sid="2">
+             Turn On
+            </a>
+           </div>
+           <ul id="activity">
+            <li class="ra_rcd ralinkpopper two_line">
+             <a class="htb ralinkpopperctrl" href="/portal/utils/pageresolver.fcgi?recordid=63ffa50b973d8559141c6397" ref="log$=activity&amp;linkpos=1">
+              keratin, partial [Homo sapiens]
+             </a>
+             <div class="ralinkpop offscreen_noflow">
+              keratin, partial [Homo sapiens]
+              <div class="brieflinkpopdesc">
+               gi|7717238|gb|AAB30058.2||bbm|34662 |152822
+              </div>
+             </div>
+             <div class="tertiary">
+              Protein
+             </div>
+            </li>
+           </ul>
+           <p class="HTOn">
+            Your browsing activity is empty.
+           </p>
+           <p class="HTOff">
+            Activity recording is turned off.
+           </p>
+           <p class="HTOff" id="turnOn">
+            <a cmd="HTOn" href="?cmd=HTOn&amp;" id="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryOn" name="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryOn" onclick="return false;" realname="EntrezSystem2.PEntrez.Protein.Sequence_ResultsPanel.HistoryDisplay.HistoryOn" sid="1">
+             Turn recording back on
+            </a>
+           </p>
+           <a class="seemore" href="/sites/myncbi/recentactivity">
+            See more...
+           </a>
+          </div>
+         </div>
+        </div>
+        <div db="protein" id="seq_search_bar">
+         <div id="seq_search_bar_warning"/>
+         <div class="seq_search_bar_left">
+          <div class="search_bar_box">
+           <label for="seq_search_bar_text"/>
+           <input id="seq_search_bar_text" type="text" value=""/>
+           <button id="seq_search_bar_clear">
+            Clear
+           </button>
+          </div>
+          <button id="seq_search_bar_find">
+           Find
+          </button>
+          <div class="hide" id="seq_nav_control">
+           <button id="seq_search_bar_first">
+            First
+           </button>
+           <button id="seq_search_bar_previous">
+            Previous
+           </button>
+           <span id="seq_search_bar_total"/>
+           <button id="seq_search_bar_next">
+            Next
+           </button>
+           <button id="seq_search_bar_last">
+            Last
+           </button>
+          </div>
+          <span id="seq_search_bar_message"/>
+         </div>
+         <div class="seq_search_bar_right">
+          <a Xclass="jig-ncbipopper" Xconfig="isTriggerElementCloseClick: false, destSelector:'#how-to-search'" href="/books/NBK44863/#sequencesquickstart.How_can_I_search_for" target="_blank">
+           Help
+          </a>
+          <button id="seq_search_bar_hide">
+           Close
+          </button>
+         </div>
+         <div id="how-to-search" style="display:none;">
+          Finds sub-sequence or patterns in the sequence and highlights the matching region.
+                The tool works with standard single letter nucleotide 
+                or protein codes including ambiguities and can match 
+                Prosite patterns in protein sequences.
+          <br/>
+          <a href="/books/NBK44863/#sequencesquickstart.How_can_I_search_for">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="NCBIFooter_dynamic">
+       <!--<component id="NCBIBreadcrumbs"/>
+    <component id="NCBIHelpDesk"/>-->
+       <noscript>
+        <img alt="" src="/stat?jsdisabled=true&amp;ncbi_app=entrez&amp;ncbi_db=protein&amp;ncbi_pdid=genpept&amp;ncbi_phid=CE8A25AB3FF632B1000000000A7208D5"/>
+       </noscript>
+      </div>
+      <div class="footer" id="footer" xml:base="http://127.0.0.1/sites/static/header_footer/" xmlns="http://www.w3.org/1999/xhtml">
+       <section class="icon-section">
+        <div class="icon-section_header" id="icon-section-header">
+         Follow NCBI
+        </div>
+        <div class="grid-container container">
+         <div class="icon-section_container">
+          <a aria-label="Twitter" class="footer-icon" href="https://twitter.com/ncbi" id="footer_twitter">
+           <svg data-name="Layer 1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <style>
+              .cls-11 {
+							fill: #737373;
+							}
+             </style>
+            </defs>
+            <title>
+             Twitter
+            </title>
+            <path class="cls-11" d="M250.11,105.48c-7,3.14-13,3.25-19.27.14,8.12-4.86,8.49-8.27,11.43-17.46a78.8,78.8,0,0,1-25,9.55,39.35,39.35,0,0,0-67,35.85,111.6,111.6,0,0,1-81-41.08A39.37,39.37,0,0,0,81.47,145a39.08,39.08,0,0,1-17.8-4.92c0,.17,0,.33,0,.5a39.32,39.32,0,0,0,31.53,38.54,39.26,39.26,0,0,1-17.75.68,39.37,39.37,0,0,0,36.72,27.3A79.07,79.07,0,0,1,56,223.34,111.31,111.31,0,0,0,116.22,241c72.3,0,111.83-59.9,111.83-111.84,0-1.71,0-3.4-.1-5.09C235.62,118.54,244.84,113.37,250.11,105.48Z">
+            </path>
+           </svg>
+          </a>
+          <a aria-label="Facebook" class="footer-icon" href="https://www.facebook.com/ncbi.nlm" id="footer_facebook">
+           <svg data-name="Layer 1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <title>
+             Facebook
+            </title>
+            <path class="cls-11" d="M210.5,115.12H171.74V97.82c0-8.14,5.39-10,9.19-10h27.14V52l-39.32-.12c-35.66,0-42.42,26.68-42.42,43.77v19.48H99.09v36.32h27.24v109h45.41v-109h35Z">
+            </path>
+           </svg>
+          </a>
+          <a aria-label="LinkedIn" class="footer-icon" href="https://www.linkedin.com/company/ncbinlm" id="footer_linkedin">
+           <svg data-name="Layer 1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <title>
+             LinkedIn
+            </title>
+            <path class="cls-11" d="M101.64,243.37H57.79v-114h43.85Zm-22-131.54h-.26c-13.25,0-21.82-10.36-21.82-21.76,0-11.65,8.84-21.15,22.33-21.15S101.7,78.72,102,90.38C102,101.77,93.4,111.83,79.63,111.83Zm100.93,52.61A17.54,17.54,0,0,0,163,182v61.39H119.18s.51-105.23,0-114H163v13a54.33,54.33,0,0,1,34.54-12.66c26,0,44.39,18.8,44.39,55.29v58.35H198.1V182A17.54,17.54,0,0,0,180.56,164.44Z">
+            </path>
+           </svg>
+          </a>
+          <a aria-label="GitHub" class="footer-icon" href="https://github.com/ncbi" id="footer_github">
+           <svg data-name="Layer 1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <style>
+              .cls-11,
+							.cls-12 {
+							fill: #737373;
+							}
+							
+							.cls-11 {
+							fill-rule: evenodd;
+							}
+             </style>
+            </defs>
+            <title>
+             GitHub
+            </title>
+            <path class="cls-11" d="M151.36,47.28a105.76,105.76,0,0,0-33.43,206.1c5.28,1,7.22-2.3,7.22-5.09,0-2.52-.09-10.85-.14-19.69-29.42,6.4-35.63-12.48-35.63-12.48-4.81-12.22-11.74-15.47-11.74-15.47-9.59-6.56.73-6.43.73-6.43,10.61.75,16.21,10.9,16.21,10.9,9.43,16.17,24.73,11.49,30.77,8.79,1-6.83,3.69-11.5,6.71-14.14C108.57,197.1,83.88,188,83.88,147.51a40.92,40.92,0,0,1,10.9-28.39c-1.1-2.66-4.72-13.42,1-28,0,0,8.88-2.84,29.09,10.84a100.26,100.26,0,0,1,53,0C198,88.3,206.9,91.14,206.9,91.14c5.76,14.56,2.14,25.32,1,28a40.87,40.87,0,0,1,10.89,28.39c0,40.62-24.74,49.56-48.29,52.18,3.79,3.28,7.17,9.71,7.17,19.58,0,14.15-.12,25.54-.12,29,0,2.82,1.9,6.11,7.26,5.07A105.76,105.76,0,0,0,151.36,47.28Z">
+            </path>
+            <path class="cls-12" d="M85.66,199.12c-.23.52-1.06.68-1.81.32s-1.2-1.06-.95-1.59,1.06-.69,1.82-.33,1.21,1.07.94,1.6Zm-1.3-1">
+            </path>
+            <path class="cls-12" d="M90,203.89c-.51.47-1.49.25-2.16-.49a1.61,1.61,0,0,1-.31-2.19c.52-.47,1.47-.25,2.17.49s.82,1.72.3,2.19Zm-1-1.08">
+            </path>
+            <path class="cls-12" d="M94.12,210c-.65.46-1.71,0-2.37-.91s-.64-2.07,0-2.52,1.7,0,2.36.89.65,2.08,0,2.54Zm0,0"/>
+            <path class="cls-12" d="M99.83,215.87c-.58.64-1.82.47-2.72-.41s-1.18-2.06-.6-2.7,1.83-.46,2.74.41,1.2,2.07.58,2.7Zm0,0">
+            </path>
+            <path class="cls-12" d="M107.71,219.29c-.26.82-1.45,1.2-2.64.85s-2-1.34-1.74-2.17,1.44-1.23,2.65-.85,2,1.32,1.73,2.17Zm0,0">
+            </path>
+            <path class="cls-12" d="M116.36,219.92c0,.87-1,1.59-2.24,1.61s-2.29-.68-2.3-1.54,1-1.59,2.26-1.61,2.28.67,2.28,1.54Zm0,0">
+            </path>
+            <path class="cls-12" d="M124.42,218.55c.15.85-.73,1.72-2,1.95s-2.37-.3-2.52-1.14.73-1.75,2-2,2.37.29,2.53,1.16Zm0,0"/>
+           </svg>
+          </a>
+          <a aria-label="Blog" class="footer-icon" href="https://ncbiinsights.ncbi.nlm.nih.gov/" id="footer_blog">
+           <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <style>
+              .cls-1{fill:#737373;}
+             </style>
+            </defs>
+            <title>
+             NCBI Insights Blog
+            </title>
+            <path class="cls-1" d="M14,30a4,4,0,1,1-4-4,4,4,0,0,1,4,4Zm11,3A19,19,0,0,0,7.05,15a1,1,0,0,0-1,1v3a1,1,0,0,0,.93,1A14,14,0,0,1,20,33.07,1,1,0,0,0,21,34h3a1,1,0,0,0,1-1Zm9,0A28,28,0,0,0,7,6,1,1,0,0,0,6,7v3a1,1,0,0,0,1,1A23,23,0,0,1,29,33a1,1,0,0,0,1,1h3A1,1,0,0,0,34,33Z"/>
+           </svg>
+          </a>
+         </div>
+        </div>
+       </section>
+       <section class="container-fluid bg-primary">
+        <div class="container pt-5">
+         <div class="row mt-3">
+          <div class="col-lg-3 col-12">
+           <p>
+            <a class="text-white" href="https://www.nlm.nih.gov/socialmedia/index.html">
+             Connect with NLM
+            </a>
+           </p>
+           <ul class="list-inline social_media">
+            <li class="list-inline-item">
+             <a aria-label="Twitter" href="https://twitter.com/NLM_NIH" rel="noopener noreferrer" target="_blank">
+              <svg style="enable-background:new 0 0 249 249;" version="1.1" viewBox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+               <style type="text/css">
+                .st20 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st30 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+               </style>
+               <title>
+                Twitter
+               </title>
+               <g>
+                <g>
+                 <g>
+                  <path class="st20" d="M192.9,88.1c-5,2.2-9.2,2.3-13.6,0.1c5.7-3.4,6-5.8,8.1-12.3c-5.4,3.2-11.4,5.5-17.6,6.7                                                 c-10.5-11.2-28.1-11.7-39.2-1.2c-7.2,6.8-10.2,16.9-8,26.5c-22.3-1.1-43.1-11.7-57.2-29C58,91.6,61.8,107.9,74,116                                                 c-4.4-0.1-8.7-1.3-12.6-3.4c0,0.1,0,0.2,0,0.4c0,13.2,9.3,24.6,22.3,27.2c-4.1,1.1-8.4,1.3-12.5,0.5c3.6,11.3,14,19,25.9,19.3                                                 c-11.6,9.1-26.4,13.2-41.1,11.5c12.7,8.1,27.4,12.5,42.5,12.5c51,0,78.9-42.2,78.9-78.9c0-1.2,0-2.4-0.1-3.6                                                 C182.7,97.4,189.2,93.7,192.9,88.1z"/>
+                 </g>
+                </g>
+                <circle class="st30" cx="124.4" cy="128.8" r="108.2"/>
+               </g>
+              </svg>
+             </a>
+            </li>
+            <li class="list-inline-item">
+             <a aria-label="Facebook" href="https://www.facebook.com/nationallibraryofmedicine" rel="noopener noreferrer" target="_blank">
+              <svg style="enable-background:new 0 0 249 249;" version="1.1" viewBox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+               <style type="text/css">
+                .st10 {
+                          fill: #FFFFFF;
+                        }
+
+                        .st110 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+               </style>
+               <title>
+                Facebook
+               </title>
+               <g>
+                <g>
+                 <path class="st10" d="M159,99.1h-24V88.4c0-5,3.3-6.2,5.7-6.2h16.8V60l-24.4-0.1c-22.1,0-26.2,16.5-26.2,27.1v12.1H90v22.5h16.9                                                       v67.5H135v-67.5h21.7L159,99.1z"/>
+                </g>
+               </g>
+               <circle class="st110" cx="123.6" cy="123.2" r="108.2"/>
+              </svg>
+             </a>
+            </li>
+            <li class="list-inline-item">
+             <a aria-label="Youtube" href="https://www.youtube.com/user/NLMNIH" rel="noopener noreferrer" target="_blank">
+              <svg style="enable-background:new 0 0 249 249;" version="1.1" viewBox="0 0 249 249" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+               <title>
+                Youtube
+               </title>
+               <style type="text/css">
+                .st4 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-width: 8;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .st5 {
+                          fill: #FFFFFF;
+                        }
+               </style>
+               <circle class="st4" cx="124.2" cy="123.4" r="108.2"/>
+               <g transform="translate(0,-952.36218)">
+                <path class="st5" d="M88.4,1037.4c-10.4,0-18.7,8.3-18.7,18.7v40.1c0,10.4,8.3,18.7,18.7,18.7h72.1c10.4,0,18.7-8.3,18.7-18.7                                             v-40.1c0-10.4-8.3-18.7-18.7-18.7H88.4z M115.2,1058.8l29.4,17.4l-29.4,17.4V1058.8z"/>
+               </g>
+              </svg>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="col-lg-3 col-12">
+           <p class="address_footer text-white">
+            National Library of Medicine
+            <br/>
+            <a class="text-white" href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/@38.9959508,-77.101021,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb:0x19156f88b27635b8!8m2!3d38.9959508!4d-77.0988323" rel="noopener noreferrer" target="_blank">
+             8600 Rockville Pike
+             <br/>
+             Bethesda, MD 20894
+            </a>
+           </p>
+          </div>
+          <div class="col-lg-3 col-12 centered-lg">
+           <p>
+            <a class="text-white" href="https://www.nlm.nih.gov/web_policies.html">
+             Web Policies
+            </a>
+            <br/>
+            <a class="text-white" href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office">
+             FOIA
+            </a>
+            <br/>
+            <a class="text-white" href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" id="vdp">
+             HHS Vulnerability Disclosure
+            </a>
+           </p>
+          </div>
+          <div class="col-lg-3 col-12 centered-lg">
+           <p>
+            <a class="supportLink text-white" href="https://support.nlm.nih.gov/">
+             Help
+            </a>
+            <br/>
+            <a class="text-white" href="https://www.nlm.nih.gov/accessibility.html">
+             Accessibility
+            </a>
+            <br/>
+            <a class="text-white" href="https://www.nlm.nih.gov/careers/careers.html">
+             Careers
+            </a>
+           </p>
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-lg-12 centered-lg">
+           <nav class="bottom-links">
+            <ul class="mt-3">
+             <li>
+              <a class="text-white" href="//www.nlm.nih.gov/">
+               NLM
+              </a>
+             </li>
+             <li>
+              <a class="text-white" href="https://www.nih.gov/">
+               NIH
+              </a>
+             </li>
+             <li>
+              <a class="text-white" href="https://www.hhs.gov/">
+               HHS
+              </a>
+             </li>
+             <li>
+              <a class="text-white" href="https://www.usa.gov/">
+               USA.gov
+              </a>
+             </li>
+            </ul>
+           </nav>
+          </div>
+         </div>
+        </div>
+       </section>
+       <script src="/portal/portal3rc.fcgi/rlib/js/InstrumentOmnitureBaseJS/InstrumentNCBIConfigJS/InstrumentNCBIBaseJS/InstrumentPageStarterJS.js?v=1" type="text/javascript">
+       </script>
+       <script src="/portal/portal3rc.fcgi/static/js/hfjs2.js" type="text/javascript">
+       </script>
+      </div>
+     </div>
+     <div>
+      <input name="EntrezSystem2.PEntrez.DbConnector.Db" sid="1" type="hidden" value="protein"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LastDb" sid="1" type="hidden" value="protein"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.Term" sid="1" type="hidden" value=""/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LastTabCmd" sid="1" type="hidden" value=""/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LastQueryKey" sid="1" type="hidden" value="1"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.IdsFromResult" sid="1" type="hidden" value=""/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LastIdsFromResult" sid="1" type="hidden" value=""/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LinkName" sid="1" type="hidden"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LinkReadableName" sid="1" type="hidden"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.LinkSrcDb" sid="1" type="hidden"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.Cmd" sid="1" type="hidden"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.TabCmd" sid="1" type="hidden"/>
+      <input name="EntrezSystem2.PEntrez.DbConnector.QueryKey" sid="1" type="hidden"/>
+     </div>
+     <input id="p$a" name="p$a" type="hidden"/>
+     <input id="p$l" name="p$l" type="hidden" value="EntrezSystem2"/>
+     <input id="p$st" name="p$st" type="hidden" value="protein"/>
+     <input disabled="disabled" id="SessionId" name="SessionId" type="hidden" value="CE8A25AB3FFA50B1_2674SID"/>
+     <input disabled="disabled" id="Snapshot" name="Snapshot" type="hidden" value="/projects/Sequences/SeqDbRelease@1.149"/>
+    </form>
+   </div>
+  </div>
+  <!-- CE8A25AB3FFA50B1_2674SID /projects/Sequences/SeqDbRelease@1.149 portal103 v4.1.r643667 Fri, Jan 14 2022 01:18:35 -->
+  <span data-token="CE8A25AB3FFA50B1_2674SID" id="portal-csrf-token" style="display:none"/>
+  <script src="/portal/js/portal.js" type="text/javascript"/>
+  <script snapshot="protein" src="//static.pubmed.gov/portal/portal3rc.fcgi/4213540/js/3812534/4212053/3812535/4080513/3815665/4186313/4211499/3758627/4184279/3908752/3423/4201092/4202232/4201890/4211497/3217400/4176568/4177091/4076482/4197492/4191477/31971/35962/2168002/33542/31854/35641/33538/33997/33966/33536/3254321/3397055/4187370/4161206/4001808.js" type="text/javascript"/>
+ </body>
+</html>
