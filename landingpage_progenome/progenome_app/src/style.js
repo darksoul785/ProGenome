@@ -6,6 +6,7 @@ const styles = {
   
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
+    navTop: "position:fixed top:0",
   
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",
