@@ -1,0 +1,14 @@
+fb9be23e5fa180bcbcb3c002448ecc0b  ./annotation_hashes.txt
+11dcf0cc2bee743f68533ea7e3c92613  ./GCF_900128725.1_BCifornacula_v1.0_assembly_report.txt
+5c3766f1aa7f808adb5acf6ed5a0668b  ./GCF_900128725.1_BCifornacula_v1.0_assembly_stats.txt
+8f8932a967d66c22f75cc81b899861cf  ./GCF_900128725.1_BCifornacula_v1.0_cds_from_genomic.fna.gz
+34338a03eee27514894788c8f8b9d24a  ./GCF_900128725.1_BCifornacula_v1.0_feature_count.txt.gz
+dee72996f48b8aa5b402ec2978f93fd2  ./GCF_900128725.1_BCifornacula_v1.0_feature_table.txt.gz
+c0e79eebf1a0d9b19d5b425c47f1dcf2  ./GCF_900128725.1_BCifornacula_v1.0_genomic.fna.gz
+3f69cedfc62a71ba24667e2050e2f3f2  ./GCF_900128725.1_BCifornacula_v1.0_genomic.gbff.gz
+b3108e865ae84b61a71e1832b1782fc0  ./GCF_900128725.1_BCifornacula_v1.0_genomic.gff.gz
+cd51fd795cab2430418833d9fd7832da  ./GCF_900128725.1_BCifornacula_v1.0_genomic.gtf.gz
+ad667f60eb04b7bc01aec7e78b67b64a  ./GCF_900128725.1_BCifornacula_v1.0_protein.faa.gz
+d8f5c3266863ffc0ee9774c14cebacd4  ./GCF_900128725.1_BCifornacula_v1.0_protein.gpff.gz
+23a025898686ec88ec473a5bff3d7ed6  ./GCF_900128725.1_BCifornacula_v1.0_rna_from_genomic.fna.gz
+fcb1c80a2d5b378932337cf98756db5e  ./GCF_900128725.1_BCifornacula_v1.0_translated_cds.faa.gz

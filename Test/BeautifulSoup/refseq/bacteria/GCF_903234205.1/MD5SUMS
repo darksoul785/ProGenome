@@ -1,0 +1,15 @@
+12e7586fc3527645a925862d7578dda1  ./annotation_hashes.txt
+c02e7cbf7a687f5e531cd8d5bd9ad858  ./GCF_903234205.1_R8-KOS-007_assembly_report.txt
+af8f198dd78acff93112fc53f3d648d6  ./GCF_903234205.1_R8-KOS-007_assembly_stats.txt
+cf64fb59722718aa63d6e8713c5d1c41  ./GCF_903234205.1_R8-KOS-007_cds_from_genomic.fna.gz
+3de69c52e2627db8b36bad25c53ac89e  ./GCF_903234205.1_R8-KOS-007_feature_count.txt.gz
+f3391187c7a1098af6201e8abd3e0b64  ./GCF_903234205.1_R8-KOS-007_feature_table.txt.gz
+9c3a89b32fc76bb93cc930a62b89d44a  ./GCF_903234205.1_R8-KOS-007_genomic.fna.gz
+fc0f4a4d87f243340815e951b3b1a29c  ./GCF_903234205.1_R8-KOS-007_genomic.gbff.gz
+dff2050652fb73901529c710d7a9380a  ./GCF_903234205.1_R8-KOS-007_genomic.gff.gz
+779ee73af45486c598fca2bface16fa3  ./GCF_903234205.1_R8-KOS-007_genomic.gtf.gz
+f0720e5e881b15606f3e2cb1003cc8a5  ./GCF_903234205.1_R8-KOS-007_protein.faa.gz
+52b13379853de1f55718be99461c1e57  ./GCF_903234205.1_R8-KOS-007_protein.gpff.gz
+8f07b2b3671f858144501b3be0f44bb8  ./GCF_903234205.1_R8-KOS-007_rna_from_genomic.fna.gz
+ba177528f6fbfae670141d97556f17a5  ./GCF_903234205.1_R8-KOS-007_translated_cds.faa.gz
+cbd427f313705501546983c7aa60f183  ./GCF_903234205.1_R8-KOS-007_wgsmaster.gbff.gz
