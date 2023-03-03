@@ -1,0 +1,15 @@
+94e5a885488da38397b1817c77881deb  ./annotation_hashes.txt
+fe7476f62aadf449b06295a64df56339  ./GCF_002074835.1_LEP401_assembly_report.txt
+2803daf8a11bb5dcdb7aed258708181c  ./GCF_002074835.1_LEP401_assembly_stats.txt
+cc583a89c33b7be7fb5acdd3e980df92  ./GCF_002074835.1_LEP401_cds_from_genomic.fna.gz
+8b40c376a72ae3c45bf01a07152a7019  ./GCF_002074835.1_LEP401_feature_count.txt.gz
+7084ec642301064d83b8dfa47bf33ad7  ./GCF_002074835.1_LEP401_feature_table.txt.gz
+c182de25c95b922a9646ae4c8b101324  ./GCF_002074835.1_LEP401_genomic.fna.gz
+8b894a623095f6a3558eb8ff9781f1a7  ./GCF_002074835.1_LEP401_genomic.gbff.gz
+d6d38fa180b26ed9bb645f34904f5b95  ./GCF_002074835.1_LEP401_genomic.gff.gz
+bac7f89fd9ca8eae7b310fe99d3feb89  ./GCF_002074835.1_LEP401_genomic.gtf.gz
+f78bb4fa52a72f0531014f216ce2efbf  ./GCF_002074835.1_LEP401_protein.faa.gz
+a702b1d87b1e872311813ca126f53369  ./GCF_002074835.1_LEP401_protein.gpff.gz
+377de5f295276a9de145ddc8b2c5000e  ./GCF_002074835.1_LEP401_rna_from_genomic.fna.gz
+c95febf940700004cdc0fccf0c05ec0d  ./GCF_002074835.1_LEP401_translated_cds.faa.gz
+2e44377b1a3bda1a1d0a5710ba11faa2  ./GCF_002074835.1_LEP401_wgsmaster.gbff.gz

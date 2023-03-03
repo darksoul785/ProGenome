@@ -1,0 +1,15 @@
+318b9d11ca6d22f41e437bb35c3697d3  ./annotation_hashes.txt
+70e309f6769607eba8f722427ae5a5e7  ./GCF_903234195.1_R7-PUT1-002_assembly_report.txt
+1a712831b7bf8ba554ea42d447defb8e  ./GCF_903234195.1_R7-PUT1-002_assembly_stats.txt
+f15b1ff16a74d83e2be691d9ae0e4134  ./GCF_903234195.1_R7-PUT1-002_cds_from_genomic.fna.gz
+0128d224e7f1e0d1553204e3083da7c8  ./GCF_903234195.1_R7-PUT1-002_feature_count.txt.gz
+2a2b08d807bb0fc48d8407257fd3f7fd  ./GCF_903234195.1_R7-PUT1-002_feature_table.txt.gz
+266c59619bae1e32490590c5ae80d2c6  ./GCF_903234195.1_R7-PUT1-002_genomic.fna.gz
+b909523fdca2e9a35851cea9b4b02cf0  ./GCF_903234195.1_R7-PUT1-002_genomic.gbff.gz
+efae96b6ae328bc9941b91f750b0d764  ./GCF_903234195.1_R7-PUT1-002_genomic.gff.gz
+c76e022eb07cd720f2bb0bd69e788d5a  ./GCF_903234195.1_R7-PUT1-002_genomic.gtf.gz
+e5186304adb61bb92e8ff0baf515851d  ./GCF_903234195.1_R7-PUT1-002_protein.faa.gz
+6877c17ad411653ea23da94b61260a4f  ./GCF_903234195.1_R7-PUT1-002_protein.gpff.gz
+f83f5df73a51c8c7b10f5e6fe9d17bc1  ./GCF_903234195.1_R7-PUT1-002_rna_from_genomic.fna.gz
+97da5c35043bb62077095131f0cc54b1  ./GCF_903234195.1_R7-PUT1-002_translated_cds.faa.gz
+a9904b7f422b4aa8aeab0cb5a4ab9c26  ./GCF_903234195.1_R7-PUT1-002_wgsmaster.gbff.gz

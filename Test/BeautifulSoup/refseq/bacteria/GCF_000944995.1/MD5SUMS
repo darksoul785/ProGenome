@@ -1,0 +1,15 @@
+f6c3089f10bae42850552075f8315b3e  ./annotation_hashes.txt
+82a9c35ce38141b785217c56fb305253  ./GCF_000944995.1_TphV1_assembly_report.txt
+fd73f69a164f3cbdd9ea50449ff1501f  ./GCF_000944995.1_TphV1_assembly_stats.txt
+bcfed7f8227f0ce950fe8658d699165f  ./GCF_000944995.1_TphV1_cds_from_genomic.fna.gz
+c1514411086e18e84a320d5e919fe58b  ./GCF_000944995.1_TphV1_feature_count.txt.gz
+af0f9f7146d53492546037f9a0c986dc  ./GCF_000944995.1_TphV1_feature_table.txt.gz
+33a0bf526ae940e9a8688d3c7152dbd2  ./GCF_000944995.1_TphV1_genomic.fna.gz
+4c8cecc4175f9d2a977b82c08382a183  ./GCF_000944995.1_TphV1_genomic.gbff.gz
+b964daa25fb8bbd6a1f9cd24cf35e2e5  ./GCF_000944995.1_TphV1_genomic.gff.gz
+c7143051f1040b4b61cb368ec6645ece  ./GCF_000944995.1_TphV1_genomic.gtf.gz
+01c5e9df12b93b6c3e049784726e201b  ./GCF_000944995.1_TphV1_protein.faa.gz
+9cf3585e9421ee1562617e71c36134a5  ./GCF_000944995.1_TphV1_protein.gpff.gz
+5ec4f8ce6c6e034657f14d6646e62e30  ./GCF_000944995.1_TphV1_rna_from_genomic.fna.gz
+62c48d79c201d88ee31e28ec01c6337f  ./GCF_000944995.1_TphV1_translated_cds.faa.gz
+dc1e5395f2069dbc503bd94fed0d8b57  ./GCF_000944995.1_TphV1_wgsmaster.gbff.gz

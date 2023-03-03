@@ -1,0 +1,14 @@
+0b1fbb4aa3f566cae3470efe19bba80d  ./annotation_hashes.txt
+2f3661a40807a83d8533f7ce97b8dbe0  ./GCF_024526695.1_FMAS_PN3_assembly_report.txt
+4729f34cd0240e1213ddfe803db52c0e  ./GCF_024526695.1_FMAS_PN3_assembly_stats.txt
+a84c85563a30f7e520bbc78d29edd959  ./GCF_024526695.1_FMAS_PN3_cds_from_genomic.fna.gz
+d880c9c92fa67aafbb9c978b167f070f  ./GCF_024526695.1_FMAS_PN3_feature_count.txt.gz
+b890954d5c286f47fc590f2e9598485b  ./GCF_024526695.1_FMAS_PN3_feature_table.txt.gz
+7b13883a947ed40cfaecf68dd4db4dab  ./GCF_024526695.1_FMAS_PN3_genomic.fna.gz
+86142cd19f7ddc653b581dde92a60a49  ./GCF_024526695.1_FMAS_PN3_genomic.gbff.gz
+6c5e84408cf002ee9c66a6eaa72513f7  ./GCF_024526695.1_FMAS_PN3_genomic.gff.gz
+49b24192909bb82e33d405ccedd9dfc7  ./GCF_024526695.1_FMAS_PN3_genomic.gtf.gz
+02b729e003d33122dbec79a7f065ee3b  ./GCF_024526695.1_FMAS_PN3_protein.faa.gz
+036ea1a714e6df8e5aca933ec86b47a3  ./GCF_024526695.1_FMAS_PN3_protein.gpff.gz
+373c03f88ec59f8fa5a586fb31087637  ./GCF_024526695.1_FMAS_PN3_rna_from_genomic.fna.gz
+37387df76925201122468835bca0af25  ./GCF_024526695.1_FMAS_PN3_translated_cds.faa.gz

@@ -1,0 +1,15 @@
+daece76b9e8d7a9625c2f9dda41b35b8  ./annotation_hashes.txt
+8fed74e2b5ac027ea36c15ff401b3c1c  ./GCF_903469595.1_R3-SAL-007_assembly_report.txt
+be99e28a029ccb684ae0a0171caeeb22  ./GCF_903469595.1_R3-SAL-007_assembly_stats.txt
+fb1f954e07be320136da90bbaab1c195  ./GCF_903469595.1_R3-SAL-007_cds_from_genomic.fna.gz
+0d341aa7318861af5ed983c7445a206a  ./GCF_903469595.1_R3-SAL-007_feature_count.txt.gz
+4f40e00263f38b721bb8a40c20ab8309  ./GCF_903469595.1_R3-SAL-007_feature_table.txt.gz
+6edc8ecbc1709bdc57a21bed5e4f78f8  ./GCF_903469595.1_R3-SAL-007_genomic.fna.gz
+8a09b92fae9a69290d69e87ab647e3a6  ./GCF_903469595.1_R3-SAL-007_genomic.gbff.gz
+437ea59f6b7b3b405dd694721996df20  ./GCF_903469595.1_R3-SAL-007_genomic.gff.gz
+a7176f3c72a707326c87b096ba55a8ef  ./GCF_903469595.1_R3-SAL-007_genomic.gtf.gz
+2a419c62bbaa894d1a89fc3f3c579406  ./GCF_903469595.1_R3-SAL-007_protein.faa.gz
+44e9dd197bf9574399ad0b7ff7574337  ./GCF_903469595.1_R3-SAL-007_protein.gpff.gz
+0dfe4f91e00af4cf105c67a4ff6f0e0d  ./GCF_903469595.1_R3-SAL-007_rna_from_genomic.fna.gz
+4b0a7849c37f65802af7157720c85915  ./GCF_903469595.1_R3-SAL-007_translated_cds.faa.gz
+57c2c45bcb3f9d1808a7f64e77823c43  ./GCF_903469595.1_R3-SAL-007_wgsmaster.gbff.gz
