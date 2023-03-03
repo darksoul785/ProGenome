@@ -8,10 +8,11 @@ module.exports = {
         primary: "#6EB330",
         secondary: "#3D71BD",
         white: "rgba(255, 255, 255, 1)",
-        dimBlue: "rgba(61, 113, 189, 1)",
+        dimBlue: "#3961AB",
+        dimGray: "#000000"
       },
       fontFamily: {
-        poppins: ["Montserrat"],
+        montserrat: ["Montserrat"],
       },
     },
     screens: {
