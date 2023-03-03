@@ -14,7 +14,7 @@ const Hero = () => (
         </p>
       </div>
 
-      <div className="flex flex-row justify-between items-center w-full">
+      <div className="flex flex-row justify-between items-center w-full mt-10">
         <h1 className="flex-1 font-montserrat font-semibold ss:text-[72px] text-[52px] text-dimBlue ss:leading[100px leading-[75px]">
           The next <br className="sm:block hidden"/> {" "}
           <span className="text-gradient">Generation</span> {" "}
@@ -23,7 +23,7 @@ const Hero = () => (
       </div>
         
       <h1 className="font-montserrat font-semibold ss:text-[68px] text-[52px] text-dimBlue ss:leading[100px leading-[75px] w-full">
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>ProGenome is a Web Finder and clustering app where you can easily search information about proteins, enzymes and its characteristics. All this info comes from official government and different scientific 
+        <p className={`${styles.paragraph} max-w-[470px] mt-10`}>ProGenome is a Web Finder and clustering app where you can easily search information about proteins, enzymes and its characteristics. All this info comes from official government and different scientific 
           databases so you can compare and obtain results in less time.</p>
       </h1>
     </div>
