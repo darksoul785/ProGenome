@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 :root {
   --black-gradient: linear-gradient(90deg, hsla(131, 44%, 48%, 1) 0%, hsla(219, 50%, 45%, 1) 100%);;
 
@@ -41,7 +47,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -50,6 +56,12 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  /* font-size: 3.2em;
+  line-height: 1.1; */
+  color: #3961AB;
 }
 
 button {

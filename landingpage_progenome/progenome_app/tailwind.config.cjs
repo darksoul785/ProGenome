@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ["./index.html", "./src/login.html", "./src/**/*.{js,jsx,html}"],
   mode: "jit",
   theme: {
     extend: {
@@ -8,6 +8,7 @@ module.exports = {
         primary: "#3961AB",
         secondary: "#44AF58",
         cont: "#E4E8EB",
+        contrast: "F0F4F6",
         white: "rgba(255, 255, 255, 1)",
         dimBlue: "#3961AB",
         dimGray: "#000000"
