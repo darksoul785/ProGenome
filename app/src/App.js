@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,19 +15,29 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>La hora es {currentTime}.</p>
+        <BrowserRouter>
+          <div><Link className="App-link" to="/">Home</Link> / <Link className="App-link" to="/login">Login</Link></div>
+          <Switch>
+            <Route exact path="/">
+              <img src={logo} className="App-logo" alt="logo" />
+              <p>
+                Edit <code>src/App.js</code> and save to reload.
+              </p>
+              <a
+                className="App-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn React
+              </a>
+              <p>La hora es {currentTime}.</p>
+            </Route>
+            <Route path="/login">
+              <p>Este es el login.</p>
+            </Route>
+          </Switch>
+        </BrowserRouter>
       </header>
     </div>
   );
