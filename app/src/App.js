@@ -16,7 +16,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <BrowserRouter>
-          <div><Link className="App-link" to="/">Home</Link> / <Link className="App-link" to="/login">Login</Link></div>
+          <div>
+            <Link className="App-link" to="/" onClick={() => {window.location.href="/"}}>Home</Link> /
+            <Link className="App-link" to="/login" onClick={() => {window.location.href="/login"}}>Login</Link>
+          </div>
           <Switch>
             <Route exact path="/">
               <img src={logo} className="App-logo" alt="logo" />
