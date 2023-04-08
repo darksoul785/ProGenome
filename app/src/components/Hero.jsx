@@ -3,9 +3,7 @@ import Typed from 'react-typed'
 import { AiOutlineSearch, AiOutlineFileSearch, AiTwotoneSnippets, AiTwotoneThunderbolt, AiTwotoneStar } from 'react-icons/ai'
 
 
-import imgHero from '../images/hero-image.png';
 import heroBg from '../images/herobg.jpg';
-import dnaGif from '../images/06.webp';
 
 const Hero = () => {
     const typedArray = ['Ligand Structures', 'Metabolic Pathways', 'Enzyme Structures', 'MeSH Ontology']
@@ -21,9 +19,9 @@ const Hero = () => {
                         Search for <Typed strings={typedArray} typeSpeed={110} backSpeed={150} loop className="text-[#c6c6c6]"/>
                     </p>
 
-                    <form class="flex items-center">   
-                        <div class="relative w-full">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <form className="flex items-center">   
+                        <div className="relative w-full">
+                            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <AiOutlineSearch size={22} className='text-[#ababab]'/>
                             </div>
                             <input type="text" id="simple-search" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm
@@ -45,10 +43,10 @@ const Hero = () => {
                               bg-transparent border border-transparent rounded-xl text-center shadow-xl'>
                     <p className='text-white font-bold text-[1.2rem] pb-2'>Highlights</p>
                     <div className='flex justify-between flex-wrap px-4'>
-                        <p class="flex px-4 py-1 text-gray-300 text-[1rem]"><AiOutlineFileSearch className="mr-2" size="25" /> Find Proteins</p>
-                        <p class="flex px-4 py-1 text-gray-300 text-[1rem]"><AiTwotoneSnippets    className="mr-2" size="25" /> Compare Data</p>
-                        <p class="flex px-4 py-1 text-gray-300 text-[1rem]"><AiTwotoneThunderbolt className="mr-2" size="25" /> Save Time</p>
-                        <p class="flex px-4 py-1 text-gray-300 text-[1rem]"><AiTwotoneStar        className="mr-2" size="25" /> Save Finds</p>
+                        <p className="flex px-4 py-1 text-gray-300 text-[1rem]"><AiOutlineFileSearch className="mr-2" size="25" /> Find Proteins</p>
+                        <p className="flex px-4 py-1 text-gray-300 text-[1rem]"><AiTwotoneSnippets    className="mr-2" size="25" /> Compare Data</p>
+                        <p className="flex px-4 py-1 text-gray-300 text-[1rem]"><AiTwotoneThunderbolt className="mr-2" size="25" /> Save Time</p>
+                        <p className="flex px-4 py-1 text-gray-300 text-[1rem]"><AiTwotoneStar        className="mr-2" size="25" /> Save Finds</p>
                         <p></p>
                     </div>
                 </div>

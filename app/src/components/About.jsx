@@ -1,4 +1,5 @@
 import React from 'react'
+import iconImg from '../images/gray-Logo.svg';
 
 const About = () => {
     return (
@@ -13,9 +14,8 @@ const About = () => {
                             area of ​​biotechnology.
                         </p>
                     </div>
-
                     <div>
-                        <img src="" alt="" />
+                        <img src={iconImg} className="h-72 mx-auto" />
                     </div>
                 </div>
 

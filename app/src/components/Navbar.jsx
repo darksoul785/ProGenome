@@ -15,10 +15,10 @@ const Navbar = () => {
                 </h1>
                 <div className='flex items-center'>
                     <ul className="hidden md:flex lg:">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">About Us</a></li>
-                        <li><a href="#Prices">Prices</a></li>
-                        <li><a href="#Contact Us">Contact Us</a></li>
+                        <li><a href="#Home"   >Home</a></li>
+                        <li><a href="#About"  >About Us</a></li>
+                        <li><a href="#Prices" >Prices</a></li>
+                        <li><a href="#Contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div className='hidden md:flex pr-4'>
@@ -32,10 +32,10 @@ const Navbar = () => {
             </div>
 
             <ul className={ !nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8' }>
-                <li className='border-b-2 border-zinc-300 w-full'>Home</li>
-                <li className='border-b-2 border-zinc-300 w-full'>About Us</li>
-                <li className='border-b-2 border-zinc-300 w-full'>Prices</li>
-                <li className='border-b-2 border-zinc-300 w-full'>Contact Us</li>                
+                <li className='border-b-2 border-zinc-300 w-full'><a href="#Home"   >Home</a></li>
+                <li className='border-b-2 border-zinc-300 w-full'><a href="#About"  >About Us</a></li>
+                <li className='border-b-2 border-zinc-300 w-full'><a href="#Prices" >Prices</a></li>
+                <li className='border-b-2 border-zinc-300 w-full'><a href="#Contact">Contact Us</a></li>                
                 <div className='flex flex-col my-4'>
                     <button className='bg-transparent text-blue-800 px-8 py-3 mb-4'>Log In</button>
                     <button className='px-8 py-3'>Sign Up</button>
