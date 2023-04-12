@@ -7,9 +7,9 @@
   pointer-events: none;
 }
 
-.font-face-montserrat {
+/* .font-face-montserrat {
   font-family: "Montserrat";
-}
+} */
  
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

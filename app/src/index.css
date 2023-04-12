@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+/* @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
   url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: bold;
-}
-  
+} */
+
 @layer base {
   li {
     @apply p-4

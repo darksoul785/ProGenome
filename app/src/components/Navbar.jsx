@@ -32,12 +32,12 @@ class Navbar extends React.Component {
                     <h1 className='text-3xl mr-4 ml-4 sm:text-4xl'>
                         <img src={logo} className='logo h-9' alt='logo' />
                     </h1>
-                    <div className='flex items-center'>
+                    <div className='font-montserrat font-semibold text-[#3961AB] flex items-center'>
                         <ul className='hidden md:flex'>
-                            <li><a className='hover:text-blue-900' href='#Home'> Home </a></li>
-                            <li><a className='hover:text-blue-900' href='#About'> About Us </a></li>
-                            <li><a className='hover:text-blue-900' href='#Prices'> Prices </a></li>
-                            <li><a className='hover:text-blue-900' href='#Contact'> Contact Us </a></li>
+                            <li><a className='hover:text-[#44AF58]' href='#Home'> Home </a></li>
+                            <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
+                            <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>
+                            <li><a className='hover:text-[#44AF58]' href='#Contact'> Contact Us </a></li>
                         </ul>
                     </div>
                         { path === '/' ? ( // cambiar por validacion para log in
