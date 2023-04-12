@@ -14,3 +14,7 @@ def get_current_time():
 @app.route('/message')
 def get_message():
     return {'message': "proyecto epico"}
+
+@app.route('/search')
+def search():
+    return "Search"
