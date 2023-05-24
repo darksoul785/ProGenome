@@ -37,10 +37,7 @@ class Hero extends Component {
                                                                                    dark:focus:ring-blue-500 dark:focus:border-blue-500 font-montserrat font-thin"
                                                                                 placeholder="What are you looking for today?" required />
                             </div>
-                            <button type="submit" className="p-3 pl-8 pr-8 ml-2 text-sm font-medium text-white text-base
-                                                            bg-blue-700 rounded-full border border-blue-700 hover:bg-transparent
-                                                            focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white 
-                                                            hover:border-white hover:text-white">
+                            <button type="submit" className="p-3 pl-8 pr-8 ml-2 text-sm font-medium text-white rounded-full hover:bg-[#44AF58] focus:ring-4 focus:outline-none focus:ring-[#3961AB] dark:bg-white hover:border-white hover:text-white">
                                 Search
                             </button>
                         </form>
