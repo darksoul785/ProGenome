@@ -25,17 +25,18 @@ class Hero extends Component {
                             Search for <Typed strings={typedArray} typeSpeed={110} backSpeed={150} loop className="text-[#c6c6c6]"/>
                         </p>
     
-                        <form className="flex items-center">   
+                        <form className="flex items-center" action="/search">   
                             <div className="relative w-full">
                                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                     <AiOutlineSearch size={22} className='text-[#ababab]'/>
                                 </div>
-                                <input type="text" id="simple-search" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm
-                                                                                   rounded-full focus:ring-blue-500 focus:border-blue-500 block
-                                                                                   w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600
-                                                                                   dark:placeholder-gray-400 dark:text-white text-base
-                                                                                   dark:focus:ring-blue-500 dark:focus:border-blue-500 font-montserrat font-thin"
-                                                                                placeholder="What are you looking for today?" required />
+                                <input type="text" id="simple-search" name="input"
+                                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm
+                                                    rounded-full focus:ring-blue-500 focus:border-blue-500 block
+                                                    w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600
+                                                    dark:placeholder-gray-400 dark:text-white text-base
+                                                    dark:focus:ring-blue-500 dark:focus:border-blue-500 font-montserrat font-thin"
+                                        placeholder="What are you looking for today?" required />
                             </div>
                             <button type="submit" className="p-3 pl-8 pr-8 ml-2 text-sm font-medium text-white rounded-full hover:bg-[#44AF58] focus:ring-4 focus:outline-none focus:ring-[#3961AB] dark:bg-white hover:border-white hover:text-white">
                                 Search
