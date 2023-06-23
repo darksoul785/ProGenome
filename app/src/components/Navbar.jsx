@@ -28,7 +28,7 @@ class Navbar extends React.Component {
 
         if (path === '/') {
             menu = (
-                <div className='px-2 flex justify-between justify-items-center h-full'>
+                <div className='px-2 flex justify-between justify-items-center h-full items-center'>
                     <h1 className='text-3xl py-4 mr-4 ml-4 sm:text-4xl'>
                         <img src={logo} className='logo h-9 sm:py-0' alt='logo' />
                     </h1>

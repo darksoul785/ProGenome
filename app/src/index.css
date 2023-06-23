@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -18,6 +18,14 @@
 
 :root {
   --soft-green: #44AF58
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*Con esto prevenimos que el padding agregue tamaño extra a un cuadro*/
+}
+*, *:before, *:after { /*Arregla el padding para que no agregue más tamaño al bloque*/
+  box-sizing: inherit;
 }
 
 #foo {

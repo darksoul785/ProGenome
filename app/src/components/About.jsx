@@ -7,7 +7,7 @@ class About extends Component {
     
     render() {
         return (
-            <div className="w-full h-scceen" id="About">
+            <div className="w-full h-screen" id="About">
                 <div className='w-full h-screen bg-white absolute'>
                     {/* <img className="w-full h-screen object-cover mix-blend-overlay" src={aboutusBg} alt="/" /> */}
                 </div>

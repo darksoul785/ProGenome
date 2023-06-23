@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './Normalize.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/Montserrat/Montserrat-VariableFont_wght.ttf'

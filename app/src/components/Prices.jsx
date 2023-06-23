@@ -8,7 +8,7 @@ class Prices extends React.Component {
             <div className='w-full h-screen my-20 lg:mt-24 lg:pt-12 font-montserrat' id="Prices">
                 <div className='max-w-[1240px] mx-auto h-full'>
                     <div className='grid max-w-[1240px] mx-auto'>
-                        <div className="mx-auto pb-5 text-gray-100 lg:pt-[10rem]">
+                        <div className="mx-auto pb-5 text-gray-100">
                             <GiMoneyStack size="10rem" />
                         </div>
                         <h1 className="text-5xl font-bold text-gray-100">Our Prices</h1>
