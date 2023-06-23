@@ -9,30 +9,20 @@ import Prices from './components/Prices'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Search from './components/Search'
+import { AppRouter } from './components/AppRouter';
 
 function App() {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
         
     return (
-        <div className="App">
-            <Navbar />
-            <header className="App-header">
-                <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/">
-                            <Hero   />
-                            <About  />
-                            <Prices />
-                        </Route>
-                        <Route path="/search">
-                            <Search />
-                        </Route>
-                    </Switch>
-                </BrowserRouter>
-            </header>
-            <Footer />
-        </div>
+
+        <BrowserRouter>
+        
+            <AppRouter/>
+        
+        </BrowserRouter>
+
     )
 }
 

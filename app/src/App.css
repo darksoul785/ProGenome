@@ -40,4 +40,31 @@
       transform: rotate(360deg);
     }
   }
+
+  .About__card {
+
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+
+  }
   
+@media (min-width: 1024px) {
+    
+  .About__grid {
+
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+  }
+
+  .About__card {
+
+    margin: 0;
+
+  }
+
+}

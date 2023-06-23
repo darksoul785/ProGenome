@@ -5,12 +5,16 @@ import { AiOutlineSearch, AiOutlineFileSearch, AiTwotoneSnippets, AiTwotoneThund
 import heroBg from '../assets/herobg.jpg';
 //import heroBg from '../assets/Dato-poligono-abstracto.jpg'
 import aboutusBg from "../assets/Biotechnology-1800x1100.jpg" 
+import About from './About';
+import Prices from './Prices';
+import Footer from './Footer';
 
 class Hero extends Component {
     render() {
         const typedArray = ['Ligand Structures', 'Metabolic Pathways', 'Enzyme Structures', 'MeSH Ontology']
 
         return (
+            <>
             <div className="w-full h-screen flex flex-col justify-between
                             bg-gradient-to-r from-[#2c5bc8] via-[#2ba290] to-[#2ba24d]"
                             id="Home">
@@ -45,6 +49,14 @@ class Hero extends Component {
                     </div>
                 </div>
             </div>
+
+            <About/>
+
+            <Prices/>
+
+            <Footer/>
+
+            </>
         )
     }
 }

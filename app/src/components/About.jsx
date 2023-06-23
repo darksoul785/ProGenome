@@ -7,8 +7,8 @@ class About extends Component {
     
     render() {
         return (
-            <div className="w-full h-screen" id="About">
-                <div className='w-full h-screen bg-white absolute'>
+            <div className="w-full" id="About">
+                <div className='w-full bg-white absolute'>
                     {/* <img className="w-full h-screen object-cover mix-blend-overlay" src={aboutusBg} alt="/" /> */}
                 </div>
                 
@@ -26,8 +26,8 @@ class About extends Component {
                         </p>
                     </div>
 
-                    <div className='grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-1 sm:pt-1 text-black'>
-                        <div className='bg-[#F3F3F3] rounded-xl shadow-xl'>
+                    <div className='text-black About__grid'>
+                        <div className='bg-[#F3F3F3] rounded-xl shadow-xl my-3 About__card'>
                             <div className="p-8">
                                 <AiOutlineSearch size="56" className="w-16 p-4 bg-[#44AF58] text-white rounded-lg mt-[-4rem]" />
                                 <h3 className="font-bold text-2xl my-4">Search for Proteins</h3>
@@ -39,7 +39,7 @@ class About extends Component {
                                 </a>
                             </div>
                         </div>
-                        <div className='bg-[#F3F3F3] rounded-xl shadow-xl'>
+                        <div className='bg-[#F3F3F3] rounded-xl shadow-xl my-3 About__card'>
                             <div className="p-8">
                                 <AiOutlineReconciliation size="56" className='w-16 p-4 bg-[#44AF58] text-white rounded-lg mt-[-4rem]' />
                                 <h3 className="font-bold text-2xl my-4">Compare your Data</h3>
@@ -51,7 +51,7 @@ class About extends Component {
                                 </a>
                             </div>
                         </div>
-                        <div className='bg-[#F3F3F3] rounded-xl shadow-xl'>
+                        <div className='bg-[#F3F3F3] rounded-xl shadow-xl my-3 About__card'>
                             <div className="p-8">
                                 <AiTwotoneExperiment size="56" className='w-16 p-4 bg-[#44AF58] text-white rounded-lg mt-[-4rem]' />
                                 <h3 className="font-bold text-2xl my-4">Use your Findings</h3>

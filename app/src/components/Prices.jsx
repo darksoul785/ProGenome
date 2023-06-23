@@ -5,13 +5,13 @@ class Prices extends React.Component {
 
     render() {
         return (
-            <div className='w-full h-screen my-20 lg:mt-24 lg:pt-12 font-montserrat' id="Prices">
+            <div className='w-full lg:pt-12 font-montserrat App-header' id="Prices">
                 <div className='max-w-[1240px] mx-auto h-full'>
                     <div className='grid max-w-[1240px] mx-auto'>
                         <div className="mx-auto pb-5 text-gray-100">
                             <GiMoneyStack size="10rem" />
                         </div>
-                        <h1 className="text-5xl font-bold text-gray-100">Our Prices</h1>
+                        <h1 className="text-5xl font-bold text-gray-100 text-center">Our Prices</h1>
                         <p className='text-[1.5rem] text-gray-400 m-10 text-center'>
                             Choose the plan that better fits your needs!
                         </p>
