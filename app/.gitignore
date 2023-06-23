@@ -2,9 +2,12 @@
 
 # dependencies
 /node_modules
+/__pycache__
 /.pnp
 .pnp.js
 venv
+package-lock.json
+package.json
 
 # testing
 /coverage

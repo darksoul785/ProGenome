@@ -1,5 +1,6 @@
 import time
 from flask import Flask, request
+from search import getTest
 
 app = Flask(__name__)
 
@@ -15,7 +16,8 @@ def get_current_time():
 def get_message():
     return {'message': "proyecto epico"}
 
-@app.route('/search', methods=['GET'])
+@app.route('/search')
 def search():
     value = request.args.get('input')
-    return {'value': value }
+    results = getTest(value)
+    return {'results': results }

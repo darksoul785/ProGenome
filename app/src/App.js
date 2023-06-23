@@ -11,36 +11,9 @@ import Footer from './components/Footer'
 import Search from './components/Search'
 
 function App() {
-    const [ currentTime, setCurrentTime ] = useState(0);
-    const [ currentMessage, setCurrentMessage ] = useState(1);
-    const [searchValue, setSearchValue] = useState('');
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
-
-    useEffect(() => {
-        fetch('/time').then(res => res.json()).then(data => {
-            setCurrentTime(data.time);
-        })
-    }, [])
-  
-    useEffect(() => {
-        fetch('/message').then(res => res.json()).then(data => {
-            setCurrentMessage(data.message);
-        })
-    }, [])
-
-    useEffect(() => {
-        async function fetchData() {
-          const urlParams = new URLSearchParams(window.location.search);
-          const inputValue = urlParams.get('input');
-          const response = await fetch(`/search?input=${inputValue}`);
-          const data = await response.json();
-          setSearchValue(data.value);
-        }
-    
-        fetchData();
-      }, []);
-      
+        
     return (
         <div className="App">
             <Navbar />
@@ -51,9 +24,6 @@ function App() {
                             <Hero   />
                             <About  />
                             <Prices />
-                        </Route>
-                        <Route path="/message">
-                            <p className='text-white text-3xl p-20'>El mensaje es {currentMessage}.</p>
                         </Route>
                         <Route path="/search">
                             <Search />

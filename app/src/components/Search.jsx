@@ -1,32 +1,39 @@
 import React, { Component } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai'
+import { ThreeDots } from 'react-loading-icons'
 
 class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchValue: ''
+      results: [],
+      isLoading: false,
     };
   }
+  urlParams = new URLSearchParams(window.location.search);
+  inputValue = this.urlParams.get('input');
 
   componentDidMount() {
-    const fetchData = async () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const inputValue = urlParams.get('input');
-      const response = await fetch(`/search?input=${inputValue}`);
-      const data = await response.json();
-      this.setState({ searchValue: data.value });
-    };
+    this.fetchData();
+  }
 
-    fetchData();
+  fetchData() {
+    this.setState({ isLoading: true });
+    fetch(`/search?input=${this.inputValue}`)
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ results: data.results });
+        this.setState({ isLoading: false });
+      })
+      .catch(error => console.log(error));
+    
   }
 
   render() {
-    const { searchValue } = this.state;
+    const { results, isLoading } = this.state;
 
     return (
-        <div className="w-screen h-full">
-
+        <div className="w-screen h-full overflow-y-auto ">
             <div className="bg-slate-600 grid grid-flow-col-dense pl-20 pr-20">
                 <form className="items-center grid grid-flow-col p-5 pl-20 pr-20" action="/search">
                     <div className="relative items-center">
@@ -38,28 +45,32 @@ class Search extends Component {
                             id="simple-search"
                             name="input"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full
-                                       focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 
-                                       dark:border-gray-600 dark:placeholder-gray-400 dark:text-white text-base 
-                                       dark:focus:ring-blue-500 dark:focus:border-blue-500 font-montserrat font-thin"
+                                        focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 
+                                        dark:border-gray-600 dark:placeholder-gray-400 dark:text-white text-base 
+                                        dark:focus:ring-blue-500 dark:focus:border-blue-500 font-montserrat font-thin"
                             placeholder="What are you looking for today?"
                             required
                         />
                     </div>
                     <button
                         type="submit"
-                        className="p-3 pl-8 pr-8 ml-2 text-sm font-medium text-[#3961AB] rounded-full 
-                                 hover:bg-[#44AF58] focus:ring-4 focus:outline-none focus:ring-[#3961AB] 
-                                 dark:bg-white hover:border-white hover:text-white"
+                        className="p-3 pl-8 pr-8 ml-2 text-sm font-medium text-[#FFF] rounded-full 
+                                  hover:bg-[#44AF58] focus:ring-4 focus:outline-none focus:ring-[#FFF] 
+                                  dark:bg-white hover:border-[#44AF58] hover:text-white border-gray-100"
                         >
                         Search
                     </button>
                 </form>
-           </div>
+            </div>
             <div className="w-screen h-full bg-slate-700 items-center p-3">
-                Results for "{ searchValue }"
-                <div>
-                    ------------------------------------------------
-                </div>
+              <h1>Results for "{ this.inputValue }"</h1>
+                {results.map((result, index) => (
+                  <p key={index}>{index}. {result}</p>
+                ))}
+                <center className='pt-5'>
+                  { isLoading ? <ThreeDots strokeOpacity={.125} speed={.75} /> : null }
+                </center>
+
             </div>
       </div>
     );
