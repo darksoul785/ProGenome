@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { AiOutlineSearch } from 'react-icons/ai'
-import { ThreeDots } from 'react-loading-icons'
+import { AiOutlineSearch } from 'react-icons/ai';
+import { ThreeDots } from 'react-loading-icons';
+//import { DataGrid } from '@mui/x-data-grid';
+//import axios from 'axios';
 
 class Search extends Component {
   constructor(props) {
@@ -31,6 +33,7 @@ class Search extends Component {
 
   render() {
     const { results, isLoading } = this.state;
+    let pId, term;
 
     return (
         <div className="w-screen h-full overflow-y-auto ">
@@ -64,8 +67,13 @@ class Search extends Component {
             </div>
             <div className="w-screen h-full bg-slate-700 items-center p-3">
               <h1>Results for "{ this.inputValue }"</h1>
-                {results.map((result, index) => (
-                  <p key={index}>{index}. {result}</p>
+                {results.map((result) => (
+                  <form action="/protein">
+                    <button>{ pId = result.substring(0, result.indexOf(' ')) }</button>
+                    { term = result.substring(result.indexOf(' ') + 1) }
+                    <input type="text" name="id" value={ pId } hidden/>
+                    <input type="text" name="term" value={ term } />
+                  </form>
                 ))}
                 <center className='pt-5'>
                   { isLoading ? <ThreeDots strokeOpacity={.125} speed={.75} /> : null }

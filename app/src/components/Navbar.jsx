@@ -49,7 +49,7 @@ class Navbar extends React.Component {
                     </div>
                 </div>
             )
-        } else if (path === '/search') {
+        } else { /** if (path === '/search') */
             menu = (
                 <div className='px-2 flex justify-between justify-items-center h-full'>
                     <h1 className='text-3xl py-4 mr-4 ml-4 sm:text-4xl'>

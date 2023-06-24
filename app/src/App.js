@@ -6,9 +6,10 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Prices from './components/Prices'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Search from './components/Search'
+import Protein from './components/Protein'
+import Tester from './components/Tester'
 
 function App() {
     const [nav, setNav] = useState(false)
@@ -27,6 +28,12 @@ function App() {
                         </Route>
                         <Route path="/search">
                             <Search />
+                        </Route>
+                        <Route path="/tester">
+                            <Tester />
+                        </Route>
+                        <Route path="/protein">
+                            <Protein />
                         </Route>
                     </Switch>
                 </BrowserRouter>
