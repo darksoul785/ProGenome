@@ -6,7 +6,6 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Prices from './components/Prices'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Search from './components/Search'
 import { AppRouter } from './components/AppRouter';
