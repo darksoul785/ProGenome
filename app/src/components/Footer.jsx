@@ -7,10 +7,10 @@ class Footer extends Component {
   render() {
       return (
         <section className={`${styles.flexCenter} ${styles.paddingY} flex-col, bg-[#E4E8EB]`}>
-        <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-          <div className="flex-[1] flex flex-col justify-start mr-10">
+        <div className={`md:flex-row flex-col mb-8 w-full`}>
+          <div className="flex-[1] flex flex-col justify-center items-center mr-10 my-5">
           <img src={logo} alt="progenome" className="w-[266px] h-[72px] object-contain"/>
-          <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>A new way to make research easier and powerful</p>
+          <p className={`${styles.paragraph} mt-4 max-w-[310px] text-center`}>A new way to make research easier and powerful</p>
           </div>
 
           <div className="py-1 flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
