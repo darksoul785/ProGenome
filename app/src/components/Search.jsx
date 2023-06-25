@@ -71,7 +71,7 @@ class Search extends Component {
                   <form action="/protein">
                     <button>{ pId = result.substring(0, result.indexOf(' ')) }</button>
                     { term = result.substring(result.indexOf(' ') + 1) }
-                    <input type="text" name="id" value={ pId } hidden/>
+                    {/* <input type="text" name="id" value={ pId } hidden/> */}
                     <input type="text" name="term" value={ term } />
                   </form>
                 ))}

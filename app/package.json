@@ -10,6 +10,7 @@
     "axios": "^1.4.0",
     "firebase": "^9.23.0",
     "react": "^18.2.0",
+    "react-comparison-table": "^1.0.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-loading-icons": "^1.1.0",
@@ -21,10 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-api": "cd api && venv/Scripts/flask.exe run --no-debugger",
+    "start-api": "cd api && venv/bin/flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test-api": "cd api && venv/Scripts/flask.exe test",
+    "test-api": "cd api && venv/bin/flask test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
