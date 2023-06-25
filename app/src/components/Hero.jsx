@@ -22,7 +22,7 @@ class Hero extends Component {
                     <img className="w-full h-full object-cover mix-blend-overlay" src={heroBg} alt="/" />
                 </div>
                 <div className='grid md:grid-cols-2 max-w-[1240px] m-auto h-[70%] w-[100%] bg-[#] mt-12 items-center align-center relative'>
-                    <div className='max-w-[1240px] mt-[-96px] w-screen h-screen mx-auto flex flex-col justify-center p-8 bg-[]'>
+                    <div className='max-w-[1240px] mt-[-96px] h-screen mx-auto flex flex-col justify-center p-8 bg-[]'>
                         <p className='text-[1.2rem] uppercase font-bold text-[#F3F3F3] text-justify font-montserrat'>Find everything you need on</p>
                         <h1 className='py-3 text-5xl md:text-7xl font-montserrat font-light text-[#F3F3F3] text-justify uppercase '><b className='font-bold'>pro</b>genome</h1>
                         <p className='text-xl pt-2 pb-5 font-bold text-[#F3F3F3] text-justify font-montserrat'>

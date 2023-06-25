@@ -17,22 +17,10 @@
 } */
 
 :root {
-  --soft-green: #44AF58
+  --secondary: #44AF58;
 }
 
-html {
-  font-size: 62.5%;
-  box-sizing: border-box; /*Con esto prevenimos que el padding agregue tamaño extra a un cuadro*/
-}
-*, *:before, *:after { /*Arregla el padding para que no agregue más tamaño al bloque*/
-  box-sizing: inherit;
-}
-
-#foo {
-  color: var(--soft-green)
-}
-
-@layer base {
+/* @layer base {
   li {
     @apply p-4
   }
@@ -42,12 +30,40 @@ html {
     hover:bg-transparent hover:text-[#3961AB] rounded-full
   }
 
-  /* button {
-    @apply text-white border soft-green back border-blue-800
-    hover:bg-transparent hover:text-blue-800 rounded-md
-  } */
+
+} */
+
+/* Estilos globales */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*Con esto prevenimos que el padding agregue tamaño extra a un cuadro*/
 }
+*, *:before, *:after { /*Arregla el padding para que no agregue más tamaño al bloque*/
+  box-sizing: inherit;
+}
+
 
 body {
   background-color: #FFF;
+}
+
+h1, h2, h3, h4 {
+
+  line-height: 1.2;
+
+}
+
+p, li, span {
+
+  line-height: 1.5;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+#foo {
+  color: var(--soft-green)
 }
