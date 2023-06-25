@@ -6,8 +6,8 @@ def getTest(value, database = "nucleotide"):
     # arrData.append(value)
 
     search_term = value  # e.g., protein name, gene name, accession number
-    # Entrez.email = "a19310213@ceti.mx"
-    # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
+    Entrez.email = "a19310213@ceti.mx"
+    Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
     handle = Entrez.esearch(db=database, term=search_term, retmax="20")
     record = Entrez.read(handle)
     id_list = record['IdList']
@@ -15,7 +15,7 @@ def getTest(value, database = "nucleotide"):
         handle = Entrez.efetch(db=database, id=seq_id, rettype='fasta', retmode='text')
         record = SeqIO.read(handle, 'fasta')
         #print(record.description)
-        arrData.append([record.description, record.])
+        arrData.append(record.description)
         #print(record.seq)
         #arrData.append(record.seq)
         #print('---')
