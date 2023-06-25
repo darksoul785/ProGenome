@@ -37,7 +37,7 @@ class Protein extends Component {
       console.log(results);
       return (
           <div className="flex flex-col p-12 pt-16">
-            <h1 className="bg-[#88F]">{ this.idValue } - { this.termValue }</h1>
+            <h1 className="bg-[#88F]">{ this.termValue }</h1>
             <p className='bg-[#FFF000]'>equisde</p>
             {
               // results['data'][0]
