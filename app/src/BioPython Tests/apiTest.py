@@ -6,10 +6,9 @@ import sys
 
 def getNCBIResults(value, database = "nucleotide"):
     arrData = []
-    search_term = "Mouse " + value # e.g., protein name, gene name, accession number
-    Entrez.email = "a19310211@ceti.mx"
+    search_term = value  # e.g., protein name, gene name, accession number
+    # Entrez.email = "a19310213@ceti.mx"
     # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
-    Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
     handle = Entrez.esearch(db=database, term=search_term, retmax="20")
     record = Entrez.read(handle)
     id_list = record['IdList']
@@ -25,7 +24,9 @@ def getNCBIResults(value, database = "nucleotide"):
     return arrData
 
 def getProteinSwissData(term):
-    term = str(term).replace("PREDICTED: ", "")
+    # Mus musculus thymoma viral proto-oncogene 1 (Akt1), transcript variant 8, non-coding RNA
+    # Homo sapiens lipase E, hormone sensitive type (LIPE), transcript variant 9, mRNA
+    # Rattus norvegicus transient receptor potential cation channel, subfamily M, member 3 (Trpm3), transcript variant 2, mRNA
     term = str(term).split(",")
     species = term[0].split(" ")
     print(term)
@@ -56,16 +57,11 @@ def getProteinSwissData(term):
                 seq_record = SeqIO.read(handle, "swiss")
                 print(seq_record.id)
                 print(seq_record.name)
-                print(seq_record.description)
+                #print(seq_record.description)
             # There is one exact result
             proteinData = {
                 'type': 'protein',
-                'data': [
-                    str(seq_record.id),
-                    str(seq_record.name),
-                    str(seq_record.description),
-                    str(seq_record.seq)
-                ]
+                'data': [ seq_record.id, seq_record.name, seq_record.seq]
             }
         else:
             print(swissId['value'])
@@ -80,7 +76,6 @@ def getProteinSwissData(term):
             'type': 'empty',
             'data': ""
         }
-
     
     return proteinData
 
@@ -127,3 +122,10 @@ def getSwissProtId(searchTerm):
         print("Protein not found in SwissProt")
 
     return accession
+
+
+getProteinSwissData("Mus musculus thymoma viral proto-oncogene 1 (Akt1), transcript variant 11, non-coding RNA")
+print("\n")
+getProteinSwissData("Homo sapiens lipase E, hormone sensitive type (LIPE), transcript variant 9, mRNA")
+print("\n")
+getProteinSwissData("Rattus norvegicus transient receptor potential cation channel, subfamily M, member 3 (Trpm3), transcript variant 2, mRNA")

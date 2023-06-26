@@ -8,6 +8,7 @@ import About from './components/About'
 import Prices from './components/Prices'
 import Footer from './components/Footer'
 import Search from './components/Search'
+import Fire from './components/Login';
 import { AppRouter } from './components/AppRouter';
 
 function App() {

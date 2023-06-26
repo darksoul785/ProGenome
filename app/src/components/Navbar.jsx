@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 
 import { AiOutlineClose, AiOutlineMenu, AiOutlineUser } from 'react-icons/ai'
 import { FaUserCircle } from 'react-icons/fa'
-
+  
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
@@ -20,7 +20,7 @@ class Navbar extends React.Component {
     handleMenuClose() {
         this.setState({nav: false});
     }
-
+    
     render() {
         const path = window.location.pathname // site's current path
         const { nav } = this.state;
@@ -38,7 +38,10 @@ class Navbar extends React.Component {
                             <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Contact Us </a></li>
-                            {/* 
+
+                            <li><a className='hover:text-[#44AF58]' href='#Login'> Login </a></li>
+
+                            {/*}
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Sign Up </a></li>
                             */}
