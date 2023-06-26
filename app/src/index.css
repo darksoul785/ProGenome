@@ -20,20 +20,14 @@
   --secondary: #44AF58;
 }
 
-/* @layer base {
-  li {
-    @apply p-4
-  }
-
-  button {
-    @apply text-white border bg-[#3961AB] border-[#3961AB]
-    hover:bg-transparent hover:text-[#3961AB] rounded-full
-  }
-
-
-} */
-
 /* Estilos globales */
+
+@layer base {
+  li {
+    @apply p-4;
+  }
+
+}
 
 html {
   font-size: 62.5%;
@@ -56,7 +50,7 @@ h1, h2, h3, h4 {
 
 p, li, span {
 
-  line-height: 1.5;
+  line-height: 1.5!important;
 
 }
 

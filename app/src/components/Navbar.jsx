@@ -85,7 +85,7 @@ class Navbar extends React.Component {
         return (
             <div className='w-full h-[4.5rem] z-10 bg-[#f3f3f3] fixed drop-shadlow-lg'>
                 { menu }
-                <ul className={!this.state.nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8 rounded-b-2xl'}>
+                <ul className={!this.state.nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8 rounded-b-2xl md:hidden'}>
                     { mobileMenu }
                 </ul>
             </div>
