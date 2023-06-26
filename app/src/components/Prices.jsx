@@ -6,7 +6,7 @@ class Prices extends React.Component {
     render() {
         return (
             <div className='w-full lg:pt-12 font-montserrat App-header' id="Prices">
-                <div className='max-w-[1240px] mx-auto h-full'>
+                <div className='w-full h-full m'>
                     <div className='grid max-w-[1240px] mx-auto'>
                         <div className="mx-auto pb-5 text-gray-100">
                             <GiMoneyStack size="10rem" />
@@ -18,9 +18,9 @@ class Prices extends React.Component {
                     </div>
 
 
-                    <div className="w-full py-[2rem] px-4 bg-white text-black rounded-lg">
+                    <div className="w-11/12 py-[2rem] mx-auto px-4 bg-white text-black rounded-lg">
 
-                        <div className="max-w-[1240px] mx-auto grid md:grid-cols-4 grid-cols-2 gap-6">
+                        <div className="max-w-[1240px] grid md:grid-cols-4 grid-cols-2 place-items-center gap-6">
                   
                             <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col">
                                 <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Free plan</h5>
