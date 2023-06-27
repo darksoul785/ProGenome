@@ -40,7 +40,7 @@ class Hero extends Component {
                                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                     <AiOutlineSearch size={22} className='text-[#ababab]'/>
                                 </div>
-                                <input type="text" id="simple-search" name="input"
+                                <input type="text" id="simple-search" name="protein"
                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm
                                                     rounded-full focus:ring-blue-500 focus:border-blue-500 block
                                                     w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600
