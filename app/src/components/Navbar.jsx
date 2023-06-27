@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png';
-
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineUser } from 'react-icons/ai'
 import { FaUserCircle } from 'react-icons/fa'
   
@@ -38,8 +38,7 @@ class Navbar extends React.Component {
                             <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Contact Us </a></li>
-
-                            <li><a className='hover:text-[#44AF58]' href='#Login'> Login </a></li>
+                            <li><Link to="/Login" className='hover:text-[#44AF58]' href='#Login'> Login </Link></li>
 
                             {/*}
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
