@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from search import getNCBIResults, getProteinSwissData, getSwissProtId, getProteinNCBIData
 import requests
@@ -37,9 +37,3 @@ def find():
     return {
         'results': proteinData
     }
-
-@app.route('/checkResults')
-def checkResults():
-    term = request.args.get('term')
-    proteinData = getProteinSwissData(term)
-    return proteinData['amount']

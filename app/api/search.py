@@ -1,3 +1,4 @@
+from flask import jsonify
 from Bio.Blast import NCBIWWW
 from Bio import SeqIO, Entrez, ExPASy
 import requests
@@ -7,8 +8,8 @@ import sys
 def getNCBIResults(value, database = "nucleotide"):
     arrData = []
     search_term = "Mouse " + value
-    # Entrez.email = "a19310211@ceti.mx"
-    # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
+    Entrez.email = "a19310211@ceti.mx"
+    Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
     # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
     handle = Entrez.esearch(db=database, term=search_term, retmax="20")
     record = Entrez.read(handle)
@@ -79,7 +80,6 @@ def getProteinSwissData(term):
             'amount': 0,
             'data': ""
         }
-
     
     return proteinData
 

@@ -11,7 +11,7 @@ export const AppRouter = () => {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/" element={             
+        <Route path="/" element={
           <Hero />
         }/>
         <Route path="/search" element={

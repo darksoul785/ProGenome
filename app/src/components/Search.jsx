@@ -11,9 +11,11 @@ class Search extends Component {
     this.state = {
       results: [],
       isLoading: false,
-      showModal: false
+      showModal: false,
+      matches: null
     };
   }
+
   urlParams = new URLSearchParams(window.location.search);
   proteinValue = this.urlParams.get('protein');
 
@@ -32,24 +34,33 @@ class Search extends Component {
       .catch(error => console.log(error));
   }
 
-  checkData = () => {
-    const term = this.result.substring(this.result.indexOf(' ') + 1)
-    axios.get(`http://localhost:5000/checkResults?term=${term}`)
-      .then(response => {
-        console.log(response.results.amount)
-        this.setState({ check: response.data });
-        if (response.amount) {
-          this.setState({ showModal: true });
-        }
-      })
-      .catch(error => {
-        console.log(error);
-      });
-
-  }
+checkData = (result) => {
+  const id = result.substring(0, result.indexOf(' '));
+  const term = result.substring(result.indexOf(' ') + 1);
+  axios
+    .get(`http://localhost:5000/protein?id=${id}&term=${term}`)
+    .then((response) => { 
+      console.log(term);
+      return response;
+    })
+    .then(response => {
+      console.log(response.data.results.amount);
+      const amount = response.data.results.amount;
+      if (amount > 1) {
+        this.setState({ showModal: true, matches: response.data.results });
+      } else {
+        const proteinTerm = response.data.data[0]; // Assuming data is an array of terms
+        const ncbiId = result.substring(0, result.indexOf(' '));
+        window.location.href = `/protein?id=${ncbiId}&term=${proteinTerm}`;
+      }
+    })
+    .catch(error => {
+      console.log(error);
+    });
+};
 
   handleCloseModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showModal: false, matches: null });
   }
 
   render() {
@@ -91,14 +102,18 @@ class Search extends Component {
               <h1>Results for "{ this.proteinValue }"</h1>
               {
                 results.map((result, index) => (
-                  <form>
-                    {/* action="/protein" */}
-                    <button className = "text-white" onClick = { this.checkData }>
-                      { ncbiId = result.substring(0, result.indexOf(' ')) }
+                  <form key={index}>
+                    <button
+                      className="text-white"
+                      type="button"
+                      onClick={() => this.checkData(result)}
+                      value={result}
+                    >
+                      {ncbiId = result.substring(0, result.indexOf(' '))}
                     </button>
-                     { term = result.substring(result.indexOf(' ') + 1) }
-                    <input type="text" name="id" value={ ncbiId } hidden/>
-                    <input type="text" name="term" value={ term } />
+                    {term = result.substring(result.indexOf(' ') + 1)}
+                    <input type="text" name="id" value={ncbiId} hidden />
+                    <input type="text" name="term" value={term} />
                   </form>
                 ))
               }
@@ -108,7 +123,7 @@ class Search extends Component {
 
               {/* <button className='btn bg-blue-300' onClick = { () => this.setState({ showModal: true }) } > */}
             </div>
-        <Modal isVisible = { this.state.showModal } onClose = { this.handleCloseModal } />
+        <Modal isVisible = { this.state.showModal } onClose = { this.handleCloseModal } matches = { this.state.matches } />
         </ Fragment>
       </div>
     );
