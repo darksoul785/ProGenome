@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { logo } from "../assets";
 import { useNavigate } from "react-router";
+import LoginModal from "./LoginModal";
 
 export const Navbar2 = () => {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ export const Navbar2 = () => {
                             <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Contact Us </a></li>
-                            <li onClick={onLogin} className="hover:cursor-pointer" >Login</li>
+                            <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
 
                             {/*}
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
@@ -59,6 +60,7 @@ export const Navbar2 = () => {
             </div>
         </ul>
       </div>
+      <LoginModal />
     </>
   );
 };

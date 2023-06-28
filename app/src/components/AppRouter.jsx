@@ -10,17 +10,16 @@ export const AppRouter = () => {
   return (
     <>
       <Navbar/>
-        <Route path="/" element={
       <Routes>
+      <Route path="/" element={
           <Hero />
         }/>
-          <Search />
         <Route path="/search" element={
+          <Search />
         }/>
-          <Protein />
         <Route path="/protein" element={
+          <Protein />
         }/>
-          <Hero />
         {/* <Route path="/*" element={
         }/> */}
       </Routes>

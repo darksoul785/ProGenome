@@ -3,7 +3,10 @@ import logo from '../assets/logo.png';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineUser } from 'react-icons/ai'
 import { FaUserCircle } from 'react-icons/fa'
-  
+import LoginModal from './LoginModal';
+
+
+
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
@@ -20,7 +23,9 @@ class Navbar extends React.Component {
     handleMenuClose() {
         this.setState({nav: false});
     }
-    
+    handleCloseModal = () => {
+        this.setState({ showModal: false, matches: null });
+      }
     render() {
         const path = window.location.pathname // site's current path
         const { nav } = this.state;
@@ -38,7 +43,7 @@ class Navbar extends React.Component {
                             <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Contact Us </a></li>
-                            <li><Link to="/Login" className='hover:text-[#44AF58]' href='#Login'> Login </Link></li>
+                            <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
 
                             {/*}
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
@@ -49,6 +54,7 @@ class Navbar extends React.Component {
                     <div className='md:hidden mr-4' onClick={this.handleClick}>
                         {!this.state.nav ? (<AiOutlineMenu size={25} />) : (<AiOutlineClose size={25} />)}
                     </div>
+                    <LoginModal isVisible = { this.state.showModal } onClose = { this.handleCloseModal }/>
                 </div>
             )
         } else { /** if (path === '/search') */
@@ -75,6 +81,7 @@ class Navbar extends React.Component {
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#About'   > About Us </a></li>
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Prices'  > Prices </a></li>
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Contact' > Contact Us </a></li>
+                <li className='border-b-2 bg-[#44AF58] w-full'><a onClick={ this.handleMenuClose } href='#Contact'> Log In </a></li>
                 {/* <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Contact' > Log In </a></li>
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Contact' > Sign Up </a></li> */}
                 {/* <div className='flex flex-col my-4'>
