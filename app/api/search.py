@@ -1,3 +1,4 @@
+from flask import jsonify
 from Bio.Blast import NCBIWWW
 from Bio import SeqIO, Entrez, ExPASy
 import requests
@@ -6,21 +7,17 @@ import sys
 
 def getNCBIResults(value, database = "nucleotide"):
     arrData = []
-    search_term = "Mouse " + value # e.g., protein name, gene name, accession number
+    search_term = "Mouse " + value
     Entrez.email = "a19310211@ceti.mx"
-    # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
     Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
+    # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
     handle = Entrez.esearch(db=database, term=search_term, retmax="20")
     record = Entrez.read(handle)
     id_list = record['IdList']
     for seq_id in id_list:
         handle = Entrez.efetch(db=database, id=seq_id, rettype='fasta', retmode='text')
         record = SeqIO.read(handle, 'fasta')
-        #print(record.description)
         arrData.append(record.description)
-        #print(record.seq)
-        #arrData.append(record.seq)
-        #print('---')
 
     return arrData
 
@@ -60,6 +57,7 @@ def getProteinSwissData(term):
             # There is one exact result
             proteinData = {
                 'type': 'protein',
+                'amount': 1,
                 'data': [
                     str(seq_record.id),
                     str(seq_record.name),
@@ -72,15 +70,16 @@ def getProteinSwissData(term):
             # There are multiple options to select from
             proteinData = {
                 'type': 'list',
+                'amount': len(swissId['value']),
                 'data': swissId['value']
             }
     else:
         # There are no results
         proteinData = {
             'type': 'empty',
+            'amount': 0,
             'data': ""
         }
-
     
     return proteinData
 
@@ -127,3 +126,6 @@ def getSwissProtId(searchTerm):
         print("Protein not found in SwissProt")
 
     return accession
+
+def getProteinNCBIData(id):
+    return {}
