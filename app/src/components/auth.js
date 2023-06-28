@@ -29,14 +29,14 @@ export const Auth = () => {
 
     return (
         <div>
-            <input className="border-2 border-sky-500 m-2 p-1" placeholder="Email..." 
+            <input className="font-montserrat font-semibold border-2 border-sky-500 m-2 p-1" placeholder="Email..." 
             onChange={(e) => setEmail(e.target.value)}/>
-            <input className="border-2 border-sky-500 m-2 p-1" placeholder="Password..."
+            <input className="font-montserrat font-semibold border-2 border-sky-500 m-2 p-1" placeholder="Password..."
             type='password'
             onChange={(e) => setPassword(e.target.value)}/>
-            <button className="rounded-none p-2 m-1" onClick={signIn}>Sign In</button>
+            <button className="font-montserrat font-semibold rounded-none p-2 m-1" onClick={signIn}>Sign In</button>
 
-            <button className="rounded-none p-2 m-1" onClick={signInWithGoogle}>Sign In With Google</button>
+            <button className="font-montserrat font-semibold rounded-none p-2 m-1" onClick={signInWithGoogle}>Sign In With Google</button>
             {/*
             <button className="rounded-none p-2 m-1" onClick={logOut}>Log Out</button>
             */}
