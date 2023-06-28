@@ -7,18 +7,23 @@ import sys
 
 def getNCBIResults(value, database = "nucleotide"):
     arrData = []
-    search_term = "Mouse " + value
-    Entrez.email = "a19310211@ceti.mx"
-    Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
-    # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
-    handle = Entrez.esearch(db=database, term=search_term, retmax="20")
-    record = Entrez.read(handle)
-    id_list = record['IdList']
-    for seq_id in id_list:
-        handle = Entrez.efetch(db=database, id=seq_id, rettype='fasta', retmode='text')
-        record = SeqIO.read(handle, 'fasta')
-        arrData.append(record.description)
+    try:
+        search_term = "Mouse " + value
+        Entrez.email = "a19310211@ceti.mx"
+        Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
+        # Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
+        handle = Entrez.esearch(db=database, term=search_term, retmax="20")
+        record = Entrez.read(handle)
+        id_list = record['IdList']
 
+        for seq_id in id_list:
+            handle = Entrez.efetch(db=database, id=seq_id, rettype='fasta', retmode='text')
+            record = SeqIO.read(handle, 'fasta')
+            arrData.append(record.description)
+
+    except Exception:
+        print("No record found in handle.")
+    
     return arrData
 
 def getProteinSwissData(term):
