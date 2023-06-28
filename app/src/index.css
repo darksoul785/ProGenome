@@ -1,25 +1,63 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+
+/* @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
   url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: bold;
+} */
+
+:root {
+  --secondary: #44AF58;
 }
-  
+
+/* Estilos globales */
+
 @layer base {
   li {
-    @apply p-4
+    @apply p-4;
   }
 
-  button {
-    @apply text-white border bg-blue-800 border-blue-800
-    hover:bg-transparent hover:text-blue-800 rounded-md
-  }
 }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*Con esto prevenimos que el padding agregue tamaño extra a un cuadro*/
+}
+*, *:before, *:after { /*Arregla el padding para que no agregue más tamaño al bloque*/
+  box-sizing: inherit;
+}
+
 
 body {
   background-color: #FFF;
+}
+
+h1, h2, h3, h4 {
+
+  line-height: 1.2;
+
+}
+
+p, li, span {
+
+  line-height: 1.5!important;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+#foo {
+  color: var(--soft-green)
 }
