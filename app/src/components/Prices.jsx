@@ -18,67 +18,101 @@ class Prices extends React.Component {
                     </div>
 
 
-                    <div className="w-11/12 py-[2rem] mx-auto px-4 bg-white text-black rounded-lg">
+                    <div className="w-11/12 py-[2rem] mx-auto px-4 bg-white text-black rounded">
 
-                        <div className="max-w-[1240px] grid md:grid-cols-4 grid-cols-2 place-items-center gap-6">
+                        <div className=" grid md:grid-cols-4 grid-cols-2 place-items-center gap-6">
                   
-                            <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                                <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Free plan</h5>
-                                <div className="flex items-baseline text-gray-900 dark:text-white  flex-wrap">
-                                    <span className="text-3xl font-semibold">$</span>
-                                    <span className="text-5xl font-extrabold tracking-tight">0</span>
-                                </div>
+                  
+                            <div className="w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
                                 
-                                <ul role="list" className="space-y-5 my-7">
-                                    <li className="flex space-x-3">
-                                        
-                                        <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Limited use</span>
-                                    </li>
-                                    <li className="flex space-x-3">
-                                        
-                                        <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">5 results per month</span>
-                                    </li>
+                                <div className="h-20">
 
-                                </ul>
+                                    <GiAtomicSlashes size="50" className="p-4 bg-[#44AF58] text-white rounded-t mx-auto w-full" />
+
+                                </div>
+
+                                <div className="px-10 pt-5 h-full">
+
+                                    <h5 className="mb-4 text-xl text-gray-500 dark:text-gray-400">Free plan</h5>
+                                        <div className="flex items-baseline text-gray-900 dark:text-white  flex-wrap">
+                                            <span className="text-3xl font-semibold">$</span>
+                                            <span className="text-5xl font-extrabold tracking-tight">0</span>
+                                        </div>
+                                        
+                                        <ul role="list" className="space-y-5 my-7">
+                                            <li className="flex space-x-3">
+                                                
+                                                <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Limited use</span>
+                                            </li>
+                                            <li className="flex space-x-3">
+                                                
+                                                <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">5 results per month</span>
+                                            </li>
+
+                                        </ul>
+
+                                </div>
 
                                 <div className="mt-auto">
 
-                                    <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+                                    <button type="button" className="text-white text-xl bg-[#2556A4] hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium text-sm px-5 py-2.5 inline-flex justify-center w-full text-center" style={{borderEndEndRadius: "0.5rem", borderEndStartRadius: "0.5rem"}}>Choose plan</button>
 
-                                </div>
-                            
-                            </div> {/* Card */}
-
-                            <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                                <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Student plan</h5>
-                                <div className="flex items-baseline text-gray-900 dark:text-white flex-wrap">
-                                    <span className="text-3xl font-semibold">$</span>
-                                    <span className="text-5xl font-extrabold tracking-tight">49</span>
-                                    <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
                                 </div>
                                 
-                                <ul role="list" className="space-y-5 my-7">
-                                    <li className="flex space-x-3">
-                                        
-                                        <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Student discount</span>
-                                    </li>
-                                    <li className="flex space-x-3">
-                                        
-                                        <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">549$/year</span>
-                                    </li>
-                                </ul>
+                            </div> {/* Card */}
+
+                            <div className="w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                                
+                                <div className="h-20">
+
+                                    <GiSchoolBag size="50" className="p-4 bg-[#44AF58] text-white rounded-t mx-auto w-full" />
+
+                                </div>
+
+                                <div className="px-10 pt-5 h-full">
+                                
+                                    <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Student plan</h5>
+                                    <div className="flex items-baseline text-gray-900 dark:text-white flex-wrap">
+                                        <span className="text-3xl font-semibold">$</span>
+                                        <span className="text-5xl font-extrabold tracking-tight">49</span>
+                                        <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                                    </div>
+                                    
+                                    <ul role="list" className="space-y-5 my-7">
+                                        <li className="flex space-x-3">
+                                            
+                                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                            <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Student discount</span>
+                                        </li>
+                                        <li className="flex space-x-3">
+                                            
+                                            <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                            <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">549$/year</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
 
                                 <div className="mt-auto">
 
-                                    <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+                                    <button type="button" className="text-white text-xl bg-[#2556A4] hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium text-sm px-5 py-2.5 inline-flex justify-center w-full text-center" style={{borderEndEndRadius: "0.5rem", borderEndStartRadius: "0.5rem"}}>Choose plan</button>
 
-                                </div>                            
+                                </div>    
+
                             </div> {/* Card */}
-                            <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+
+                            <div className="w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                                
+                            <div className="h-20">
+
+                                <GiArchiveResearch  size="50" className="p-4 bg-[#44AF58] text-white rounded-t mx-auto w-full" />
+
+                            </div>
+
+                            <div className="px-10 pt-5 h-full">
+
                                 <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Basic plan</h5>
                                 <div className="flex items-baseline text-gray-900 dark:text-white flex-wrap">
                                     <span className="text-3xl font-semibold">$</span>
@@ -90,44 +124,61 @@ class Prices extends React.Component {
                                     <li className="flex space-x-3">
                                         
                                         <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Some advantages</span>
+                                        <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Some advantages</span>
                                     </li>
                                     <li className="flex space-x-3">
                                         
                                         <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">$899.99/year</span>
+                                        <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">$899.99/year</span>
                                     </li>
 
                                 </ul>
+
+                            </div>
+
                                 <div className="mt-auto">
 
-                                    <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+                                    <button type="button" className="text-white text-xl bg-[#2556A4] hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium text-sm px-5 py-2.5 inline-flex justify-center w-full text-center" style={{borderEndEndRadius: "0.5rem", borderEndStartRadius: "0.5rem"}}>Choose plan</button>
 
                                 </div>                             
                             </div> {/* Card */}
-                            <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                            
+                            <div className="w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                                
+                                                                
+                                <div className="h-20">
+
+                                    <GiRoundStar size="50" className="p-4 bg-[#44AF58] text-white rounded-t mx-auto w-full" />
+
+                                </div>
+                                
+                                <div className="px-10 pt-5 h-full">
+
                                 <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Premium plan</h5>
                                 <div className="flex items-baseline text-gray-900 dark:text-white flex-wrap">
                                     <span className="text-3xl font-semibold">$</span>
                                     <span className="text-5xl font-extrabold tracking-tight">99.99</span>
                                     <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
                                 </div>
-                                
+
                                 <ul role="list" className="space-y-5 my-7">
                                     <li className="flex space-x-3">
                                         
                                         <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">The best</span>
+                                        <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">The best</span>
                                     </li>
                                     <li className="flex space-x-3">
                                         
                                         <svg aria-hidden="true" className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                        <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">$1,099/year</span>
+                                        <span className="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">$1,099/year</span>
                                     </li>
                                 </ul>
+
+                                </div>
+
                                 <div className="mt-auto">
 
-                                    <button type="button" className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+                                    <button type="button" className="text-white text-xl bg-[#2556A4] hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium text-sm px-5 py-2.5 inline-flex justify-center w-full text-center" style={{borderEndEndRadius: "0.5rem", borderEndStartRadius: "0.5rem"}}>Choose plan</button>
 
                                 </div>                             
                             </div> {/* Card */}
