@@ -17,7 +17,16 @@
 } */
 
 :root {
-  --soft-green: #44AF58
+  --secondary: #44AF58;
+}
+
+/* Estilos globales */
+
+@layer base {
+  li {
+    @apply p-4;
+  }
+
 }
 
 html {
@@ -28,26 +37,27 @@ html {
   box-sizing: inherit;
 }
 
-#foo {
-  color: var(--soft-green)
-}
-
-@layer base {
-  li {
-    @apply p-4
-  }
-
-  button {
-    @apply text-white border bg-[#3961AB] border-[#3961AB]
-    hover:bg-transparent hover:text-[#3961AB] rounded-full
-  }
-
-  /* button {
-    @apply text-white border soft-green back border-blue-800
-    hover:bg-transparent hover:text-blue-800 rounded-md
-  } */
-}
 
 body {
   background-color: #FFF;
+}
+
+h1, h2, h3, h4 {
+
+  line-height: 1.2;
+
+}
+
+p, li, span {
+
+  line-height: 1.5!important;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+#foo {
+  color: var(--soft-green)
 }

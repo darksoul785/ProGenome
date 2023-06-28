@@ -70,3 +70,20 @@
   }
 
 }
+
+/* Header */
+/* 
+#Home {
+
+  background-image: url(./assets/Dato-poligono-abstracto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.8);
+
+} */
+
+.Home__image {
+
+  filter: brightness(0.8);
+
+}

@@ -13,8 +13,6 @@ import login from './components/Login'
 import { AppRouter } from './components/AppRouter';
 
 function App() {
-    const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
         
     return (
 
