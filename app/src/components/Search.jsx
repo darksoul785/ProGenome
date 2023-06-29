@@ -115,18 +115,18 @@ class Search extends Component {
         <Fragment>
             <div className="grid grid-flow-col-dense p-10">
               <form className="flex items-center md:flex-row flex-col" action="/search">
-                  <div class="relative w-full lg:w-96 lg:pr-5">
+                  <div className="relative w-full lg:w-96 lg:pr-5">
                     <select name="species" id="species"
                         className="bg-gray-50 border border-gray-300 text-gray-900 font-montserrat
                                           rounded-full focus:ring-blue-500 focus:border-blue-500 block
                                           w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
                                           dark:placeholder-gray-400 dark:text-white font-thin text-xl
                                           dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                      <option value="" selected disabled>Choose a species</option>
+                      <option value="" defaultValue disabled>Choose a species</option>
                       <option value="">Any species</option>
                       {
                         this.species.map((species, index) => (
-                          <option value={species}>{species}</option>
+                          <option id={index} value={species}>{species}</option>
                         ))
                       }
                     </select>
@@ -160,7 +160,7 @@ class Search extends Component {
               </center>
               { results.length === 0 && !isLoading
               ? 
-              <div class="w-full p-8 text-white">
+              <div className="w-full p-8 text-white">
                 <center>
                   <AiOutlineFrown size={60}/>
                   <h1 className="text-4xl p-2">No Results Found</h1>
@@ -170,7 +170,7 @@ class Search extends Component {
                 </center>
               </div>
               :
-               <div class="w-full p-10 text-white">
+               <div className="w-full p-10 text-white">
                 <Table celled className="m-5">
                   {/* Renderizar el encabezado de la tabla */}
                   <Table.Header>

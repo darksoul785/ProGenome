@@ -1,5 +1,6 @@
 from Bio.Blast import NCBIWWW
 from Bio import SeqIO, Entrez, ExPASy
+from Bio.Seq import Seq
 import requests
 from bs4 import BeautifulSoup
 import sys
@@ -70,6 +71,8 @@ def getProteinSwissData(term):
                     str(seq_record.id),
                     str(seq_record.name),
                     str(seq_record.description),
+                    # str(seq_record.translate),
+                    # str(seq_record.features),
                     str(seq_record.seq)
                 ]
             }
@@ -98,6 +101,8 @@ def getProteinSwissDataById(id):
         # print(seq_record.name)
         # print(seq_record.description)
     # There is one exact result
+    print(seq_record, "\n")
+    print(dir(seq_record))
 
     return {
         'type': 'protein',
@@ -106,6 +111,8 @@ def getProteinSwissDataById(id):
             str(seq_record.id),
             str(seq_record.name),
             str(seq_record.description),
+            # str(seq_record.translate),
+            # str(seq_record.features),
             str(seq_record.seq)
         ]
     }
@@ -161,6 +168,7 @@ def getProteinNCBIData(protein_id):
 
     # Analizar la respuesta XML
     record = Entrez.read(handle)
+    print(dir(record))
 
     return {
         'type': 'protein',
@@ -173,9 +181,17 @@ def getProteinNCBIData(protein_id):
             # str(record[0]['GBReference_title']),
             # str(record[0]['GBReference_authors']),
             # str(record[0]['GBReference_pubmed']),
-            str(record[0]['GBSeq_sequence'])
+            str(rnaToProtein(record[0]['GBSeq_sequence']))
         ]
-    }
+    }    
 
-print(getProteinSwissData("Mus musculus thymoma viral proto-oncogene 1 (Akt1), transcript variant 11, non-coding RNA"))
-print("------------------------------------\n",getProteinSwissDataById("Q923E4"))
+def rnaToProtein(rna_sequence):
+    rna = Seq(rna_sequence)
+    protein = rna.translate()
+
+    return str(protein)
+
+#print(getProteinSwissData("Mus musculus thymoma viral proto-oncogene 1 (Akt1), transcript variant 11, non-coding RNA"))
+#print("------------------------------------\n",getProteinSwissDataById("Q923E4"))
+
+#print(getProteinNCBIData("NR_176841"))

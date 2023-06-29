@@ -204,7 +204,21 @@ class Protein extends Component {
                 }
               </div>
             </div>
-            { /** Swissprot name */}
+            { /** Swissprot Translation */}
+            {/* <span className="ml-5 text-lg"><b>Translation</b></span>
+            <div className="p-2 flex">
+              <div className="w-full p-3 text-md bg-gray-100 ml-2 mr-3 rounded-lg ">
+                <span className="break-words font-mono">{ swissResults[3] }</span>
+              </div>
+            </div> */}
+            { /** Swissprot Features */}
+            {/* <span className="ml-5 text-lg"><b>Features</b></span>
+            <div className="p-2 flex">
+              <div className="w-full p-3 text-md bg-gray-100 ml-2 mr-3 rounded-lg ">
+                <span className="break-words font-mono">{ swissResults[4] }</span>
+              </div>
+            </div> */}
+            { /** Swissprot sequence */}
             <span className="ml-5 text-lg"><b>Complete Sequence</b></span>
             <div className="p-2 flex">
               <div className="w-full p-3 text-md bg-gray-100 ml-2 mr-3 rounded-lg ">
@@ -242,7 +256,7 @@ class Protein extends Component {
                 }
               </h1>
               <hr/>
-              <div class="mt-2 mb-2">
+              <div className="mt-2 mb-2">
                 <button className="pt-3 pl-6 pr-6 pb-3 m-2 text-xl text-white bg-[#3c4d64] hover:bg-[#2d3845] rounded-full"
                   onClick={this.toggleSideA}> NCBI
                 </button>
