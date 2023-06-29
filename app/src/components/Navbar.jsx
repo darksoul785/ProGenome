@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineUser } from 'react-icons/ai'
 import { FaUserCircle } from 'react-icons/fa'
-import LoginModal from './LoginModal';
+import SignInModal from './SignInModal';
 
 
 
@@ -12,10 +12,17 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             nav: false,
+            showModal: false,
         }
         this.handleMenuClose = this.handleMenuClose.bind(this)
     }
     
+    openSignInModal = () => {
+    
+        this.setState({ showModal: true });
+    
+    }
+
     handleClick = () => {
         this.setState({ nav: !this.state.nav });
     };
@@ -24,13 +31,13 @@ class Navbar extends React.Component {
         this.setState({nav: false});
     }
     handleCloseModal = () => {
-        this.setState({ showModal: false, matches: null });
+        this.setState({ showModal: false});
       }
     render() {
         const path = window.location.pathname // site's current path
         const { nav } = this.state;
         let menu, mobileMenu
-
+        
         if (path === '/') {
             menu = (
                 <div className='px-2 flex justify-between justify-items-center h-full items-center'>
@@ -43,7 +50,7 @@ class Navbar extends React.Component {
                             <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Contact Us </a></li>
-                            <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
+                            <li><button className='hover:test-[#44AF58]' onClick={ () => this.openSignInModal() }>Sign In</button></li>
 
                             {/*}
                             <li><a className='hover:text-[#44AF58]' href='#Contact'> Log In </a></li>
@@ -54,7 +61,6 @@ class Navbar extends React.Component {
                     <div className='md:hidden mr-4' onClick={this.handleClick}>
                         {!this.state.nav ? (<AiOutlineMenu size={25} />) : (<AiOutlineClose size={25} />)}
                     </div>
-                    <LoginModal isVisible = { this.state.showModal } onClose = { this.handleCloseModal }/>
                 </div>
             )
         } else { /** if (path === '/search') */
@@ -65,7 +71,7 @@ class Navbar extends React.Component {
                     </h1>
                     <div className='font-montserrat font-semibold text-[#3961AB] flex items-center'>
                         <ul className='hidden md:flex'>
-                            <li><a className='hover:text-[#44AF58]' href='/'> Home </a></li>
+                            <li><button className='hover:test-[#44AF58]' onClick={ () => this.openSignInModal() }>Sign In</button></li>
                         </ul>
                     </div>
                     <div className='md:hidden mr-4' onClick={this.handleClick}>
@@ -81,7 +87,7 @@ class Navbar extends React.Component {
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#About'   > About Us </a></li>
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Prices'  > Prices </a></li>
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Contact' > Contact Us </a></li>
-                <li className='border-b-2 bg-[#44AF58] w-full'><a onClick={ this.handleMenuClose } href='#Contact'> Log In </a></li>
+                <li><button className='border-b-2 bg-[#E4E8EB]' onClick={ () => this.openSignInModal() }>Sign In</button></li>
                 {/* <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Contact' > Log In </a></li>
                 <li className='border-b-2 bg-[#E4E8EB] w-full'><a onClick={ this.handleMenuClose } href='/#Contact' > Sign Up </a></li> */}
                 {/* <div className='flex flex-col my-4'>
@@ -97,7 +103,9 @@ class Navbar extends React.Component {
                 <ul className={!this.state.nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8 rounded-b-2xl md:hidden'}>
                     { mobileMenu }
                 </ul>
+                <SignInModal isVisible = { this.state.showModal } onClose = { this.handleCloseModal }/>
             </div>
+            
         )
     }    
 }
