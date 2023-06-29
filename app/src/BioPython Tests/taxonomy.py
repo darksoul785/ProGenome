@@ -31,6 +31,8 @@ def obtener_especies_mas_buscadas(num_especies=90000):
                 if len(especie) > 1:
                     especies.append(especie[1])
             
+        for each in especie:
+            each = str(each).replace("sdfsdf", "")
 
     return especies
 

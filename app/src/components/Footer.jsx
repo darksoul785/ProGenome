@@ -54,7 +54,7 @@ class Footer extends Component {
 
             <div className='mt-16 bg-zinc-800 p-5'>
 
-                <p className='text-3xl text-center text-white'>&copy;2023 Copyright: ProGenome</p>
+                <p className='text-lg text-center text-white'>&copy;2023 Copyright: ProGenome</p>
 
             </div>
 
