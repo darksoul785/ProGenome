@@ -20,7 +20,7 @@ class Prices extends React.Component {
 
                     <div className="w-11/12 py-[2rem] mx-auto px-4 bg-white text-black rounded">
 
-                        <div className=" grid md:grid-cols-4 grid-cols-2 place-items-center gap-6">
+                    <div className=" grid lg:grid-cols-4 sm:grid-cols-2 place-items-center gap-6">
                   
                   
                             <div className="w-full h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">

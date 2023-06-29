@@ -27,7 +27,7 @@ class Hero extends Component {
 
                         <div className='flex items-center flex-wrap my-5'>
 
-                            <span className='py-3 text-5xl text-7xl font-montserrat font-bold text-[#F3F3F3] text-justify uppercase' style={{color: "#44AF58"}}>pro</span><h1 className='py-3 text-5xl text-7xl font-montserrat font-light text-[#F3F3F3] text-justify uppercase m-0'>genome</h1>
+                            <span className='py-3 text-5xl text-7xl font-montserrat font-bold text-[#F3F3F3] text-justify uppercase' style={{color: "#FFF"}}>pro</span><h1 className='py-3 text-5xl text-7xl font-montserrat font-light text-[#F3F3F3] text-justify uppercase m-0'>genome</h1>
 
                         </div>
 
@@ -62,8 +62,6 @@ class Hero extends Component {
             <About/>
 
             <Prices/>
-
-            <Footer/>
 
             </>
         )

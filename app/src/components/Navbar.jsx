@@ -33,7 +33,7 @@ class Navbar extends React.Component {
                         <img src={logo} className='logo h-9 sm:py-0' alt='logo' />
                     </h1>
                     <div className='font-montserrat font-semibold text-[#3961AB] flex items-center'>
-                        <ul className='hidden md:flex'>
+                         <ul className='hidden md:flex text-xl'>
                             <li><a className='hover:text-[#44AF58]' href='#Home'> Home </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#About'> About Us </a></li>
                             <li><a className='hover:text-[#44AF58]' href='#Prices'> Prices </a></li>

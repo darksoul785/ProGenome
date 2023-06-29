@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from search import getNCBIResults, getProteinSwissData, getSwissProtId, getProteinNCBIData
+from search import getNCBIResults, getProteinSwissData, getProteinSwissDataById, getSwissProtId, getProteinNCBIData
 import requests
 #import time
 
@@ -22,18 +22,32 @@ def get_message():
 @app.route('/search')
 def search():
     value = request.args.get('protein')
-    results = getNCBIResults(value)
+    species = request.args.get('species')
+    results = getNCBIResults(value, species)
     return {
         'results': results
     }
 
 @app.route('/protein')
 def find():
-    pid = request.args.get('id')
+    pId = request.args.get('id')
     term = request.args.get('term')
-    
-    #print(term)
-    proteinData = getProteinSwissData(term)
+    ncbiData = getProteinNCBIData(pId)
+    swissData = getProteinSwissData(term)
+
     return {
-        'results': proteinData
+        'ncbiResults': ncbiData,
+        'swissResults': swissData
+    }
+
+@app.route('/proteinByIds')
+def findByBothIds():
+    pId = request.args.get('pId')
+    sId = request.args.get('sId')
+    ncbiData = getProteinNCBIData(pId)
+    swissData = getProteinSwissDataById(sId)
+
+    return {
+        'ncbiResults': ncbiData,
+        'swissResults': swissData
     }

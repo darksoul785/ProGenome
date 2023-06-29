@@ -26,7 +26,7 @@ function Fire () {
   const handleLogin = async () => {
     try {
       await firebase.auth().signInWithEmailAndPassword(email, password);
-      console.log('Login successful!');
+      // console.log('Login successful!');
       // Redirect or perform additional actions after successful login
     } catch (error) {
       console.error('Login error:', error);

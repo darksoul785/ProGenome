@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Search from "./Search";
 import Protein from "./Protein";
+import Footer from "./Footer";
 import Fire from "./Login";
 
 export const AppRouter = () => {
@@ -20,10 +21,14 @@ export const AppRouter = () => {
         <Route path="/protein" element={
           <Protein />
         }/>
+        <Route path="/proteinByIds" element={
+          <Protein />
+        }/>
         {/* <Route path="/*" element={
           <Hero />
         }/> */}
       </Routes>
+      <Footer />
     </>
   )
 }
