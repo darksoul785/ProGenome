@@ -45,7 +45,8 @@ def findByBothIds():
     pId = request.args.get('pId')
     sId = request.args.get('sId')
     ncbiData = getProteinNCBIData(pId)
-    swissData = getProteinSwissData(sId)
+    swissData = getProteinSwissDataById(sId)
+
     return {
         'ncbiResults': ncbiData,
         'swissResults': swissData

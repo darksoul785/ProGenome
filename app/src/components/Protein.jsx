@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AiOutlineSearch } from 'react-icons/ai';
+import { AiFillExclamationCircle } from "react-icons/ai"
+import { FaExternalLinkAlt } from "react-icons/fa"
 import { ThreeDots } from 'react-loading-icons';
 import { render } from 'react-dom';
 import CompareChart from '../../src';
@@ -8,17 +9,28 @@ class Protein extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        // ncbiResults: { 'type': String, 'amount': Number, 'data': Array },
-        // swissResults: { 'type': String, 'amount': Number, 'data': Array },
-        results: { 'ncbiResults': {}, 'swissResults': {} },
+        // results: { 'type': String, 'data': Array },
+        results: { 
+          'ncbiResults': {
+            'amount': Number,
+            'data': Array,
+            'type': String
+          },
+          'swissResults': {
+            'amount': Number,
+            'data': Array,
+            'type': String
+          }
+        },
+        // results: {'ncbiResults': {}, 'swissResults': {}},
         isLoading: false,
         showSideA: true,
         showSideB: true
       };
     }
     urlParams = new URLSearchParams(window.location.search);
-    idValue = this.urlParams.get('id');
-    termValue = this.urlParams.get('term');
+    pIdValue = this.urlParams.get('id') ?? this.urlParams.get('pId');
+    termValue = this.urlParams.get('term') ?? this.urlParams.get('sId');
   
     componentDidMount() {
       this.fetchData();
@@ -29,25 +41,11 @@ class Protein extends Component {
       const idParam = this.urlParams.get('id') ?? this.urlParams.get('pId');
       const termParam = this.urlParams.get('term') ?? this.urlParams.get('sId');
       const endpoint = termParam.split(" ").length > 1 ? '/protein' : '/proteinByIds';
-      console.log(endpoint);
-      fetch(
-          endpoint === '/protein' 
-          ? `/protein?id=${idParam}&term=${termParam}` 
-          : `/proteinByIds?pId=${idParam}&sId=${termParam}`
-        )
+      fetch(endpoint === '/protein' ? `/protein?id=${idParam}&term=${termParam}` : `/proteinByIds?pId=${idParam}&sId=${termParam}`)
         .then(response => response.json())
         .then(data => {
-          const results = {
-            ncbiResults: {
-              data: data.ncbiResults
-            },
-            swissResults: {
-              data: data.swissResults
-            }
-          };
-
-          this.setState({ 
-            results: results,
+          this.setState({
+            results: { 'ncbi': data.ncbiResults, 'swiss': data.swissResults },
             isLoading: false
           });
         })
@@ -71,22 +69,104 @@ class Protein extends Component {
     }
 
     sideA() {
+      const { results } = this.state;
+      const ncbiResults = results?.ncbi?.data ?? [];
+
+      console.log(results.ncbi);
+
+      if (ncbiResults.length < 0) {
+        return (
+        <div className='w-1/2 float-left m-3/5 p-8 overflow-auto bg-[#FFF] text-[#d53535] m-0'>
+            <center>
+              <AiFillExclamationCircle size={60}/>
+              <h1 className="text-4xl p-2">Please try again</h1>
+              <p className="text-2xl pb-40 text-black">
+                There were some issues while trying to load your results. Please try loading the page again.
+              </p>
+            </center>
+          </div>
+        )
+      }
+
       return (
-        <div className="mt-5">
-          <div className='w-1/2 float-left m-3/5 bg-[#FFF] m-0'>
-            <h1 className="flex justify-center p-3">
-              NCBI
-            </h1>
-            <hr/>
+        <div className='w-1/2 float-left m-3/5 overflow-auto bg-[#FFF] m-0'>
+          <h1 className="flex justify-center p-3">
+            NCBI
+          </h1>
+          <hr/>
+          <div className="mt-5">
+            { /** Swissprot ID */}
+            <div className="p-2 flex items-center">
+              <div className="w-2/6 p-2 text-lg bg-gray-200 ml-2 rounded-lg">
+                <span><center><b>Identifier</b></center></span>
+              </div>
+              <div className="w-4/6 p-2 text-lg bg-gray-100 ml-2 rounded-lg ">
+                <span className="break-words">{ ncbiResults[0] }</span>
+              </div>
+            </div>
+            { /** Swissprot name */}
+            <div className="p-2 flex items-center">
+              <div className="w-2/6 p-2 text-lg bg-gray-200 ml-2 rounded-lg ">
+                <span><center><b>Scientific Name</b></center></span>
+              </div>
+              <div className="w-4/6 p-2 text-lg bg-gray-100 ml-2 rounded-lg ">
+                <span className="break-words">{ ncbiResults[1] }</span>
+              </div>
+            </div>
+            { /** Swissprot description */}
+            <div className="p-2 flex">
+              <div className="w-2/6 p-2 text-lg bg-gray-200 ml-2 rounded-lg ">
+                <span><center><b>Description</b></center></span>
+              </div>
+              <div className="w-4/6 p-2 text-lg bg-gray-100 ml-2 rounded-lg ">
+                {
+                  String(ncbiResults[3]).split(';').map((value, key) => (
+                    // (String(value).replace("~", ""))
+                    (!value.includes("##Evidence"))
+                    ?
+                      value ? <li className="break-words">{ value }</li> : ''
+                    : ""
+                  ))
+                }
+              </div>
+            </div>
+            { /** Swissprot name */}
+            <span className="ml-5 text-lg"><b>Complete Sequence</b></span>
+            <div className="p-2 flex">
+              <div className="w-full p-3 text-md bg-gray-100 ml-2 mr-3 rounded-lg ">
+                <span className="break-words font-mono">{ ncbiResults[4] }</span>
+              </div>
+            </div>
+            { /** Visit */ }
+            <div className="p-2 w-full flex items-center">
+              <a href={ "https://www.ncbi.nlm.nih.gov/nuccore/" + ncbiResults[0] } 
+                className="w-1/2 p-2 text-lg text-white hover:text-white bg-[#20558a] hover:bg-[#163c63] rounded-lg inline-flex justify-center">
+                <FaExternalLinkAlt size="25" className="pr-3" /> See the source material
+              </a>
+            </div>
+            { /** Info end */}
           </div>
         </div>
       )
     }
 
     sideB() {
-      const { results, isLoading } = this.state;
+      const { results } = this.state;
+      const swissResults = results?.swiss?.data ?? [];
 
-      console.log(results);
+      if (swissResults.length < 0) {
+        return (
+        <div className='w-1/2 float-left m-3/5 p-8 overflow-auto bg-[#FFF] text-[#d53535] m-0'>
+            <center>
+              <AiFillExclamationCircle size={60}/>
+              <h1 className="text-4xl p-2">Please try again</h1>
+              <p className="text-2xl pb-40 text-black">
+                There were some issues while trying to load your results. Please try loading the page again.
+              </p>
+            </center>
+          </div>
+        )
+      }
 
       return (
         <div className='w-1/2 float-left m-3/5 overflow-auto bg-[#FFF] m-0'>
@@ -95,62 +175,71 @@ class Protein extends Component {
           </h1>
           <hr/>
           <div className="mt-5">
-            {/* { console.log(results['data']['swissResults']['data'][0]) }
-
+            { /** Swissprot ID */}
             <div className="p-2 flex items-center">
-              <div className="w-2/6 p-2 text-xl bg-gray-200 ml-2 rounded-lg">
+              <div className="w-2/6 p-2 text-lg bg-gray-200 ml-2 rounded-lg">
                 <span><center><b>Identifier</b></center></span>
               </div>
-              <div className="w-4/6 p-2 text-xl bg-gray-100 ml-2 rounded-lg ">
-                <span class="break-words">{ results['swissResults']['data'][0] }</span>
-              </div>
-            </div> */}
-            {/* <div className="p-2 flex items-center">
-              <div className="w-2/6 p-2 text-xl bg-gray-200 ml-2 rounded-lg ">
-                <span><center><b>Scientific Name</b></center></span>
-              </div>
-              <div className="w-4/6 p-2 text-xl bg-gray-100 ml-2 rounded-lg ">
-                <span class="break-words">{ results['swissResults']['data'][1] }</span>
+              <div className="w-4/6 p-2 text-lg bg-gray-100 ml-2 rounded-lg ">
+                <span className="break-words">{ swissResults[0] }</span>
               </div>
             </div>
+            { /** Swissprot name */}
+            <div className="p-2 flex items-center">
+              <div className="w-2/6 p-2 text-lg bg-gray-200 ml-2 rounded-lg ">
+                <span><center><b>Scientific Name</b></center></span>
+              </div>
+              <div className="w-4/6 p-2 text-lg bg-gray-100 ml-2 rounded-lg ">
+                <span className="break-words">{ swissResults[1] }</span>
+              </div>
+            </div>
+            { /** Swissprot description */}
             <div className="p-2 flex">
-              <div className="w-2/6 p-2 text-xl bg-gray-200 ml-2 rounded-lg ">
+              <div className="w-2/6 p-2 text-lg bg-gray-200 ml-2 rounded-lg ">
                 <span><center><b>Description</b></center></span>
               </div>
-              <div className="w-4/6 p-2 text-xl bg-gray-100 ml-2 rounded-lg ">
+              <div className="w-4/6 p-2 text-lg bg-gray-100 ml-2 rounded-lg ">
                 {
-                  String(results['swissResults']['data'][2]).split(';').map((value, key) => (
-                    value ? <li class="break-words">{ value }</li> : ''
+                  String(swissResults[2]).split(';').map((value, key) => (
+                    value ? <li className="break-words">{ value }</li> : ''
                   ))
                 }
               </div>
-            </div> */}
-            {
-              // results['data'][0]
-              // Object.entries(results['data']).map((value, key) => (
-              //   <div className="p-3 text-xl bg-gray-200 m-3 rounded-lg ">
-              //     <span class="break-words">{ value.slice(1) }</span>
-              //   </div>
-              // ))
-            }
-            {/* <div style={{width:"75%", marginLeft:"auto", marginRight:"auto"}}>
-            <CompareChart 
-              ID   = { results['data'][0] }
-              name = { results['data'][1] }
-            />
-            </div> */}
+            </div>
+            { /** Swissprot name */}
+            <span className="ml-5 text-lg"><b>Complete Sequence</b></span>
+            <div className="p-2 flex">
+              <div className="w-full p-3 text-md bg-gray-100 ml-2 mr-3 rounded-lg ">
+                <span className="break-words font-mono">{ swissResults[3] }</span>
+              </div>
+            </div>
+            { /** Visit */ }
+            <div className="p-2 w-full flex items-center">
+              <a href={ "https://swissmodel.expasy.org/repository/uniprot/" + swissResults[0] } 
+                className="w-1/2 p-2 text-lg text-white hover:text-white bg-[#EC1820] hover:bg-[#cc141a] rounded-lg inline-flex justify-center">
+                <FaExternalLinkAlt size="25" className="pr-3" /> See the source material
+              </a>
+            </div>
+            { /** Info end */}
           </div>
         </div>
       )
     }
 
     render() {
-      const { showSideA, showSideB, isLoading } = this.state;
+      const { showSideA, showSideB, isLoading, pIdValue, termValue } = this.state;
 
       return (
-        <div className="w-full h-screen overflow-y-auto pt-16 bg-slate-600">
+        <div className="w-full overflow-y-auto pt-16 bg-slate-600 pb-5">
             <div className=" p-10">
-              <h1 className="text-4xl text-white">{ this.termValue }</h1>
+              <h1 className="text-4xl text-white">
+                { console.log(termValue) }
+                {
+                  termValue !== ""
+                  ? "Comparison for " + { pIdValue } + { termValue }
+                  : ""
+                }
+              </h1>
               <hr/>
               <div class="mt-2 mb-2">
                 <button className="pt-3 pl-6 pr-6 pb-3 m-2 text-xl text-white bg-[#3c4d64] hover:bg-[#2d3845] rounded-full"
@@ -160,18 +249,18 @@ class Protein extends Component {
                   onClick={this.toggleSideB}> SwissProt
                 </button>
               </div>
-              <div className="w-full h-full border-opacity-70 divide-x-2 divide-gray-500">
+              { 
+                isLoading 
+                ?
+                  <center>
+                    <ThreeDots strokeOpacity={.125} speed={.75} className="p-10" />
+                  </center>
+                : 
+                  <div className="w-full h-full border-opacity-70 divide-x-2 divide-gray-500 p-10">
                     { showSideA && this.sideA() }
-                    { 
-                      isLoading 
-                      ?
-                        <center>
-                          <ThreeDots color="#FF0000" secondaryColor="#00FF00" strokeOpacity={.125} speed={.75} className="p-10" />
-                        </center>
-                      : 
-                        showSideB && this.sideB() 
-                    }
-              </div>
+                    { showSideB && this.sideB() }
+                  </div>
+              }
             </div>
         </div>
       )

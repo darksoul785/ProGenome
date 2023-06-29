@@ -1,4 +1,3 @@
-from flask import jsonify
 from Bio.Blast import NCBIWWW
 from Bio import SeqIO, Entrez, ExPASy
 import requests
@@ -34,7 +33,7 @@ def getProteinSwissData(term):
     term = str(term).replace("PREDICTED: ", "")
     term = str(term).split(",")
     species = term[0].split(" ")
-    print(term)
+    # print(term)
     for each in term:
         if "(" in each:
             code = "(" + each.split("(")[1].replace(",", "")
@@ -44,11 +43,11 @@ def getProteinSwissData(term):
         if "variant" in each:
             variant = each.replace(" transcript ", "").replace(",", "")
 
-    print("species:", species)
-    print("code:", code)
-    print("variant:", variant)
+    # print("species:", species)
+    # print("code:", code)
+    # print("variant:", variant)
     search_term = species + " " + code + " " + variant
-    print(search_term)
+    # print(search_term)
     swissId = getSwissProtId(search_term)
 
     if (swissId == None):
@@ -60,9 +59,9 @@ def getProteinSwissData(term):
             pid = swissId['value']
             with ExPASy.get_sprot_raw(pid) as handle:
                 seq_record = SeqIO.read(handle, "swiss")
-                print(seq_record.id)
-                print(seq_record.name)
-                print(seq_record.description)
+                # print(seq_record.id)
+                # print(seq_record.name)
+                # print(seq_record.description)
             # There is one exact result
             proteinData = {
                 'type': 'protein',
@@ -75,7 +74,7 @@ def getProteinSwissData(term):
                 ]
             }
         else:
-            print(swissId['value'])
+            # print(swissId['value'])
             # There are multiple options to select from
             proteinData = {
                 'type': 'list',
@@ -95,11 +94,12 @@ def getProteinSwissData(term):
 def getProteinSwissDataById(id):
     with ExPASy.get_sprot_raw(id) as handle:
         seq_record = SeqIO.read(handle, "swiss")
-        print(seq_record.id)
-        print(seq_record.name)
-        print(seq_record.description)
+        # print(seq_record.id)
+        # print(seq_record.name)
+        # print(seq_record.description)
     # There is one exact result
-    proteinData = {
+
+    return {
         'type': 'protein',
         'amount': 1,
         'data': [
@@ -109,8 +109,6 @@ def getProteinSwissDataById(id):
             str(seq_record.seq)
         ]
     }
-
-    return proteinData
 
 def getSwissProtId(searchTerm):
     Entrez.tool = "biopython"
@@ -159,7 +157,7 @@ def getSwissProtId(searchTerm):
 
 def getProteinNCBIData(protein_id):
     # Realizar una solicitud de búsqueda utilizando el ID de la proteína
-    handle = Entrez.efetch(db='protein', id=protein_id, retmode='xml')
+    handle = Entrez.efetch(db='nucleotide', id=protein_id, retmode='xml')
 
     # Analizar la respuesta XML
     record = Entrez.read(handle)
@@ -170,6 +168,14 @@ def getProteinNCBIData(protein_id):
         'data': [
             str(record[0]['GBSeq_primary-accession']),
             str(record[0]['GBSeq_definition']),
+            str(record[0]['GBSeq_source']),
+            str(record[0]['GBSeq_comment']),
+            # str(record[0]['GBReference_title']),
+            # str(record[0]['GBReference_authors']),
+            # str(record[0]['GBReference_pubmed']),
             str(record[0]['GBSeq_sequence'])
         ]
     }
+
+print(getProteinSwissData("Mus musculus thymoma viral proto-oncogene 1 (Akt1), transcript variant 11, non-coding RNA"))
+print("------------------------------------\n",getProteinSwissDataById("Q923E4"))
