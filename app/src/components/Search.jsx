@@ -51,10 +51,10 @@ class Search extends Component {
     axios
       .get(`http://localhost:5000/protein?id=${id}&term=${term}`)
       .then((response) => {
-        console.log(response.data.results.amount);
-        const amount = response.data.results.amount;
+        console.log(response.data.swissResults.amount);
+        const amount = response.data.swissResults.amount;
         if (amount > 1) {
-          this.setState({ showModal: true, matches: response.data.results, selectedTerm: term, selectedId: id });
+          this.setState({ showModal: true, matches: response.data.swissResults, selectedTerm: term, selectedId: id });
         } else {
           window.location.href = `/protein?id=${id}&term=${term}`;
         }

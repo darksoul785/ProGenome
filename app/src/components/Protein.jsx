@@ -72,8 +72,6 @@ class Protein extends Component {
       const { results } = this.state;
       const ncbiResults = results?.ncbi?.data ?? [];
 
-      console.log(results.ncbi);
-
       if (ncbiResults.length < 0) {
         return (
         <div className='w-1/2 float-left m-3/5 p-8 overflow-auto bg-[#FFF] text-[#d53535] m-0'>
@@ -227,17 +225,20 @@ class Protein extends Component {
     }
 
     render() {
-      const { showSideA, showSideB, isLoading, pIdValue, termValue } = this.state;
+      const { showSideA, showSideB, isLoading, pIdValue, termValue, results } = this.state;
+      const ncbiResults = results?.ncbi?.data ?? [];
+      const swissResults = results?.swiss?.data ?? [];
+
+      console.log(ncbiResults[0])
 
       return (
         <div className="w-full overflow-y-auto pt-16 bg-slate-600 pb-5">
             <div className=" p-10">
               <h1 className="text-4xl text-white">
-                { console.log(termValue) }
                 {
-                  termValue !== ""
-                  ? "Comparison for " + { pIdValue } + { termValue }
-                  : ""
+                  isLoading
+                  ? "Loading..."
+                  : "Comparison between " + ncbiResults[0] + " and " + swissResults[0]
                 }
               </h1>
               <hr/>
