@@ -3,13 +3,11 @@ from Bio import Entrez
 Entrez.email = "a19310211@ceti.mx"
 Entrez.api_key = "4d788df9760b5c99f223eda7f61601168908"
 
-def obtener_especies_mas_buscadas(num_especies=90000):
-    # Realizar la búsqueda en NCBI para obtener las especies con insulina y ordenar por relevancia
+def obtener_especies_mas_buscadas(num_especies=100):
     handle = Entrez.esearch(db='protein', term='insulin', sort='relevance')
     record = Entrez.read(handle)
     handle.close()
 
-    # Obtener los identificadores (IDs) de los primeros num_especies resultados
     id_list = record['IdList'][:num_especies]
 
     # Obtener los detalles de los registros de las especies seleccionadas
@@ -30,14 +28,12 @@ def obtener_especies_mas_buscadas(num_especies=90000):
                 especie = str(especie[0]).split('Insulin')
                 if len(especie) > 1:
                     especies.append(especie[1])
-            
-        for each in especie:
-            each = str(each).replace("sdfsdf", "")
+    
+    # Eliminar los strings repetidos convirtiendo el arreglo en un conjunto y luego en una lista
+    especies = list(set(especies))
+
+    for each in especies:
+        each = str(each)[1:].replace("- ", "").replace("precursor", "").replace("", "").replace("cod ", "").replace("(tentative sequence)", "isoform 2")
+        print(each)
 
     return especies
-
-# Obtener las primeras 100 especies de las más buscadas con insulina en NCBI
-especies_mas_buscadas = obtener_especies_mas_buscadas(num_especies=100)
-
-# Imprimir las especies obtenidas
-print(especies_mas_buscadas)

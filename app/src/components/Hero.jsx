@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Typed from 'react-typed'
 import { AiOutlineSearch, AiOutlineFileSearch, AiTwotoneSnippets, AiTwotoneThunderbolt, AiTwotoneStar } from 'react-icons/ai'
-
 import heroBg from '../assets/herobg.jpg';
 //import heroBg from '../assets/Dato-poligono-abstracto.jpg'
 import aboutusBg from "../assets/Biotechnology-1800x1100.jpg" 
@@ -70,16 +69,3 @@ class Hero extends Component {
 
 
 export default Hero
-
-/*
-<div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[10%] mx-1 md:left-1/2 transform md:-translate-x-1/2
-                bg-transparent border border-transparent rounded-xl text-center shadow-xl'>
-    <p className='text-white font-bold text-[1.2rem] pb-2'>Highlights</p>
-    <div className='flex justify-between flex-wrap px-4'>
-        <p className="flex px-4 py-1 text-gray-200 text-[1rem]"><AiOutlineFileSearch  className="mr-2" size="25" /> Search</p>
-        <p className="flex px-4 py-1 text-gray-200 text-[1rem]"><AiTwotoneSnippets    className="mr-2" size="25" /> Compare</p>
-        <p className="flex px-4 py-1 text-gray-200 text-[1rem]"><AiTwotoneThunderbolt className="mr-2" size="25" /> Fast</p>
-        <p className="flex px-4 py-1 text-gray-200 text-[1rem]"><AiTwotoneStar        className="mr-2" size="25" /> Organize</p>
-    </div>
-</div>
-*/

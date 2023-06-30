@@ -191,7 +191,39 @@ def rnaToProtein(rna_sequence):
 
     return str(protein)
 
-#print(getProteinSwissData("Mus musculus thymoma viral proto-oncogene 1 (Akt1), transcript variant 11, non-coding RNA"))
-#print("------------------------------------\n",getProteinSwissDataById("Q923E4"))
+def mostSearchedSpecies(num_especies=100):
+    handle = Entrez.esearch(db='protein', term='insulin', sort='relevance')
+    record = Entrez.read(handle)
+    handle.close()
 
-#print(getProteinNCBIData("NR_176841"))
+    id_list = record['IdList'][:num_especies]
+
+    # Obtener los detalles de los registros de las especies seleccionadas
+    handle = Entrez.efetch(db='protein', id=id_list, rettype='fasta', retmode='text')
+    records = handle.read()
+    handle.close()
+
+    especies = []  # Arreglo para almacenar los nombres de las especies
+
+    # Procesar cada registro para obtener el nombre de la especie
+    for record in records.split('>'):
+        if record:
+            lines = record.split('\n')
+            especie = str(lines[0]).split('insulin')  # Obtener el nombre de la especie
+            if len(especie) > 1:
+                especies.append(especie[1])
+            else:
+                especie = str(especie[0]).split('Insulin')
+                if len(especie) > 1:
+                    especies.append(especie[1])
+    
+    # Eliminar los strings repetidos convirtiendo el arreglo en un conjunto y luego en una lista
+    especies = list(set(especies))
+
+    species = []
+    for each in especies:
+        each = str(each)[1:].replace("- ", "").replace("precursor", "").replace(" - ", "").replace("cod ", "").replace("(tentative sequence)", "").replace("isoform 2", "").replace("[", "").replace("]", "")
+        print(each)
+        species.append(each)
+
+    return species
