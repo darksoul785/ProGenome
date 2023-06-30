@@ -17,15 +17,29 @@ class Search extends Component {
       matches: null,
       selectedId: null,
       selectedTerm: null,
+      species: [],
       activePage: 1,
       itemsPerPage: 50
     };
+    this.getSpecies();
   }
 
   urlParams = new URLSearchParams(window.location.search);
   proteinValue = this.urlParams.get('protein');
   speciesValue = this.urlParams.get('species');
-  species = ['Homo sapiens', 'Mus musculus', 'Aplysia californica', 'Octodon degus', 'Camelus dromedarius', 'Danio rerio', 'Elephant', 'Acanthochromis polyacanthus', 'Ovis aries', 'Squirrel monkey', 'Turkey', 'Cucurbitae', 'Bactrocera dorsalis', 'Galemys pyrenaicus', 'Myotis brandtii'];
+
+  getSpecies = (result) => {
+      axios
+      .get(`http://localhost:5000/species`)
+      .then((response) => {
+          this.setState({ species: response.data });
+      })
+      .catch(error => {
+          console.log(error);
+      });
+  };
+
+  // species = ['Homo sapiens', 'Mus musculus', 'Aplysia californica', 'Octodon degus', 'Camelus dromedarius', 'Danio rerio', 'Elephant', 'Acanthochromis polyacanthus', 'Ovis aries', 'Squirrel monkey', 'Turkey', 'Cucurbitae', 'Bactrocera dorsalis', 'Galemys pyrenaicus', 'Myotis brandtii'];
 
   componentDidMount() {
     this.fetchData();
@@ -108,7 +122,7 @@ class Search extends Component {
   };
 
   render() {
-    const { results, isLoading, activePage, itemsPerPage } = this.state;
+    const { results, isLoading, activePage, itemsPerPage, species } = this.state;
 
     return (
         <div className="w-full h-full overflow-y-auto pt-16 bg-slate-600">
@@ -125,8 +139,8 @@ class Search extends Component {
                       <option value="" defaultValue disabled>Choose a species</option>
                       <option value="">Any species</option>
                       {
-                        this.species.map((species, index) => (
-                          <option id={index} value={species}>{species}</option>
+                        species.map((specie, index) => (
+                          <option id={index} value={specie}>{specie}</option>
                         ))
                       }
                     </select>

@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from search import getNCBIResults, getProteinSwissData, getProteinSwissDataById, getSwissProtId, getProteinNCBIData
+from search import getNCBIResults, getProteinSwissData, getProteinSwissDataById, mostSearchedSpecies, getProteinNCBIData
 import requests
 #import time
 
@@ -51,3 +51,7 @@ def findByBothIds():
         'ncbiResults': ncbiData,
         'swissResults': swissData
     }
+
+@app.route('/species')
+def getSpecies():
+    return mostSearchedSpecies()
