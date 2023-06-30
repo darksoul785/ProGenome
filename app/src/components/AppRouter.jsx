@@ -5,6 +5,7 @@ import Search from "./Search";
 import Protein from "./Protein";
 import Footer from "./Footer";
 import Fire from "./Login";
+import Fire from "./SignIn";
 
 export const AppRouter = () => {
   
@@ -12,7 +13,7 @@ export const AppRouter = () => {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/" element={
+      <Route path="/" element={
           <Hero />
         }/>
         <Route path="/search" element={
@@ -25,7 +26,6 @@ export const AppRouter = () => {
           <Protein />
         }/>
         {/* <Route path="/*" element={
-          <Hero />
         }/> */}
       </Routes>
       <Footer />
